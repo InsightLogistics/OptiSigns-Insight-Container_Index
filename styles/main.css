@@ -16,14 +16,14 @@ html, body {
 .container {
     position: absolute;
     top: 0;
-    /* left: 50%; 제거 */
-    /* transform: translateX(-50%); 제거 */
-    left: 0; /* 추가: 왼쪽에 붙이기 */
+    left: 0; /* left: 960px 대신 0으로 */
+    transform: none; /* transform 제거 */
     
     /* 16:9 비율 유지하며 화면 채우기 */
     width: 100vw;
     height: calc(100vw * 9 / 16);
     max-height: 100vh;
+    /* max-width: calc(100vh * 16 / 9); 이 줄을 제거해야 함! */
     
     padding: 0;
     background-color: transparent;
