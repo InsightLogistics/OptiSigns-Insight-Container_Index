@@ -60,7 +60,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.4vmin 2vmin; /* 상하/좌우 패딩 복원 및 조정 */
+    padding: 0 2vmin 0.7vmin; /* [수정] 헤더 위쪽 패딩 제거, 하단 패딩 조정 */
     border-bottom: 0.1vmin solid #eee;
     /* background-color: #fff; */ /* 헤더 흰색 배경 제거 */
 }
