@@ -23,14 +23,12 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%);
     
-    background-color: #fff;
+    background-color: transparent; /* 컨테이너 자체는 투명하게 처리 */
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    border-radius: 1.5vmin;
-    box-shadow: 0 0.4vmin 1.2vmin rgba(0, 0, 0, 0.1);
-    /* 너비와 높이 값을 여기서 직접 지정하지 않고, 아래 미디어 쿼리에서 지정합니다. */
+    /* 그림자와 테두리는 각 내부 요소에 적용하므로 제거 */
 }
 
 /* [수정된 핵심 로직]
@@ -55,9 +53,7 @@ html, body {
     }
 }
 
-
-/* --- 이하 스타일은 이전과 동일합니다 --- */
-
+/* --- 이하 스타일 복원 및 수정 --- */
 
 /* 헤더 스타일 */
 header {
@@ -66,6 +62,7 @@ header {
     justify-content: space-between;
     padding: 1.4vmin 2.8vmin;
     border-bottom: 0.1vmin solid #eee;
+    background-color: #fff; /* 헤더 배경 추가 */
 }
 
 .dashboard-logo {
@@ -97,8 +94,10 @@ header h1 {
     gap: 0.9vmin;
 }
 
-/* 카드 공통 스타일 */
-.card {
+/* [복원] 각 박스(카드) 요소 스타일 */
+.top-info-slider-container,
+.chart-and-table-wrapper,
+.announcements-section {
     background-color: #fff;
     padding: 1.8vmin;
     border-radius: 1.1vmin;
@@ -108,11 +107,16 @@ header h1 {
     overflow: hidden;
 }
 
-.card-header {
+/* 카드 내부 헤더 스타일 */
+.chart-section h2,
+.announcements-section h2,
+.table-section h3,
+.top-info-slide h3 {
     text-align: left;
     padding-bottom: 1.4vmin;
     border-bottom: 0.1vmin solid #e0e0e0;
     margin-bottom: 1.4vmin;
+    margin-top: 0;
     font-size: 1.8vmin;
     color: #003A52;
     font-weight: 700;
@@ -120,12 +124,8 @@ header h1 {
 
 /* 상단 정보 슬라이더 */
 .top-info-slider-container {
-    position: relative;
-    overflow: hidden;
-    display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.4vmin;
 }
 
 .top-info-slide {
@@ -151,8 +151,11 @@ header h1 {
 }
 
 .top-info-slide h3 {
-    font-size: 1.8vmin;
-    margin-bottom: 1vmin;
+    position: absolute;
+    top: 1.8vmin;
+    left: 1.8vmin;
+    width: calc(100% - 3.6vmin);
+    padding-left: 0; /* 헤더 공통 스타일에서 처리 */
 }
 
 .top-info-slide p {
@@ -216,11 +219,8 @@ header h1 {
 }
 
 .chart-and-table-wrapper {
-    display: flex;
     flex-direction: row;
     gap: 1.4vmin;
-    width: 100%;
-    height: 100%;
 }
 
 .chart-section {
@@ -415,6 +415,7 @@ footer {
     border-top: 0.1vmin solid #eee;
     color: #777;
     font-size: 1.3vmin;
+    background-color: #fff; /* 푸터 배경 추가 */
 }
 
 /* 색상 유틸리티 */
