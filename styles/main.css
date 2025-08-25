@@ -213,16 +213,6 @@ header h1 {
     padding: 30px;
 }
 
-/* 푸터 스타일 */
-footer {
-    text-align: center;
-    margin-top: 5px;
-    padding-top: 5px;
-    border-top: 1px solid #eee;
-    color: #777;
-    font-size: 0.9em;
-}
-
 /* 상단 정보 슬라이더 컨테이너 */
 .top-info-slider-container {
     position: relative;
