@@ -147,6 +147,8 @@ header h1 {
     height: 100%; /* 부모 컨테이너의 높이를 꽉 채우도록 설정 */
     display: flex;
     flex-direction: column; /* 내부 요소(제목, 차트)는 세로로 유지 */
+    /* 추가: 차트 섹션 내부 요소들이 공간을 균등하게 채우도록 */
+    justify-content: space-between;
 }
 
 .chart-section h2 {
@@ -160,7 +162,7 @@ header h1 {
 .chart-container {
     position: relative;
     width: 100%;
-    height: 70%; /* 고정 비율 높이로 변경 */
+    height: 100%; /* 고정 비율 높이로 변경 */
     min-height: 0;
     margin: 0 auto;
 }
