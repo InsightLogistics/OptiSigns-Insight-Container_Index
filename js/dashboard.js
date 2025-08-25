@@ -37,6 +37,8 @@ function resizeDashboard() {
     container.style.marginTop = `${(availableHeight - newHeight) / 2}px`;
 }
 
+// --- End of 16:9 Ratio Scaling Code ---
+
 let KCCIChart;
 let SCFIChart;
 let WCIChart;
@@ -50,6 +52,8 @@ let exchangeRateChart;
 const DATA_JSON_URL = 'data/crawling_data.json';
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Call resizeDashboard once the DOM is loaded to set the initial size.
+    resizeDashboard();
     const setupChart = (chartId, type, datasets, additionalOptions = {}, isAggregated = false) => {
         const ctx = document.getElementById(chartId);
         if (ctx) {
@@ -1017,6 +1021,8 @@ const createDatasetsFromTableRows = (indexType, chartData, tableRows) => {
             }
         }
     }
-
     loadAndDisplayData();
 });
+
+// Add an event listener to call resizeDashboard whenever the window is resized.
+window.addEventListener('resize', resizeDashboard);
