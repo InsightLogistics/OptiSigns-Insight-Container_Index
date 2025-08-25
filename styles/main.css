@@ -138,15 +138,12 @@ header h1 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
     padding: 15px;
-
     display: flex;
     flex-direction: row;
     gap: 15px;
-
-    /* height: 100%; 이전에 제거하셨거나 주석 처리했을 겁니다. */
-    min-height: 250px; /* 이 값도 필요에 따라 조절하여 최소 높이를 설정합니다. */
+    height: 35vh; /* 뷰포트 높이의 35%로 설정 */
+    min-height: 200px; /* 최소 높이를 더 낮춤 */
     box-sizing: border-box;
-    /* 여기에 max-height를 추가합니다. */
 }
 
 .chart-section {
@@ -170,9 +167,10 @@ header h1 {
 
 .chart-container {
     position: relative;
-    /* height: 70%; <-- 이 줄을 완전히 제거하거나 주석 처리합니다. */
-    min-height: 250px; /* 차트의 최소 높이를 지정합니다. 필요에 따라 값을 조절하세요. */
     width: 100%;
+    height: 30vh; /* 뷰포트 높이의 30%로 설정 */
+    min-height: 180px; /* 최소 높이를 더 낮춤 */
+    max-height: 400px; /* 최대 높이 제한 */
     margin: 0 auto;
 }
 
