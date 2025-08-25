@@ -1,203 +1,393 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insight Logistics Dashboard</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@2.0.0/dist/chartjs-adapter-date-fns.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body class="bg-gray-100">
-    <div class="container">
-        <header>
-            <img src="images/logo.png" alt="Company Logo" class="dashboard-logo"> <h1>Insight Logistics Dashboard</h1>
-        </header>
+/* styles/main.css */
 
-        <div class="dashboard-grid">
-            <div class="top-content-grid">
-                <div class="announcements-section">
-                    <h2>Announcements</h2>
-                    <ul class="announcements-list">
-                        <li>• 식사 후 건더기를 제외한 <strong>국물은 그라인더를 켠 상태로 싱크대</strong>에 비워주시고 나머지 <strong>쓰레기는 1층 Warehouse 남자 화장실 앞 쓰레기 통</strong>에 버려주세요.</li>
-                        <li>• 버리러 갈 때는 <strong>Warehouse 계단이 아닌 Office 계단을 통해 이동</strong>해주시고 한 쪽에 쓰레기가 몰리지 않도록 <strong>2개의 쓰레기 통에 적절히 분배</strong>해주세요.</li>
-                        <li>• 건물 내 커피 및 국물 등 액체류를 흘리는 경우 <strong>본인이 즉시 치워서 바닥에 얼룩 지는 일을 방지</strong>해주세요.</li>
-                        <li>• 쥐, 바퀴 및 파리 등 해충 발생을 방지하기 위해 <strong>퇴근할 때는 과자 등 음식물을 책상에 보관하지 마시고 버리거나 집에 가져가주세요.</strong></li>
-                        <li>• 미관과 호흡기 건강을 위해 매주 금요일 퇴근 전에는 본인 및 주변 <strong>책상의 먼지 및 얼룩을 닦아서 제거</strong>해주세요.</li>
-                    </ul>
-                </div>
+/* 전체 페이지 레이아웃 및 폰트 설정 */
+html, body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
 
-                <div class="top-info-slider-container">
-                    <div class="top-info-slide active" id="top-info-slide-1">
-                        <h3>World Clocks</h3>
-                        <div class="world-clock-list">
-                            <div class="world-clock-item">
-                                <span>Los Angeles</span>
-                                <span id="time-la">--:--:--</span>
-                            </div>
-                            <div class="world-clock-item">
-                                <span>New York</span>
-                                <span id="time-ny">--:--:--</span>
-                            </div>
-                            <div class="world-clock-item">
-                                <span>Paris</span>
-                                <span id="time-paris">--:--:--</span>
-                            </div>
-                            <div class="world-clock-item">
-                                <span>Shanghai</span>
-                                <span id="time-shanghai">--:--:--</span>
-                            </div>
-                            <div class="world-clock-item">
-                                <span>Seoul</span>
-                                <span id="time-seoul">--:--:--</span>
-                            </div>
-                            <div class="world-clock-item">
-                                <span>Sydney</span>
-                                <span id="time-sydney">--:--:--</span>
-                            </div>
-                        </div>
-                    </div>
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 화면 정중앙에 배치 */
 
-                    <div class="top-info-slide" id="top-info-slide-2">
-                        <h3>Weather in Los Angeles</h3>
-                        <div class="weather-current-info">
-                            <img id="weather-icon-current" src="https://placehold.co/80x80/cccccc/ffffff?text=Icon" alt="Weather Icon">
-                            <span id="temperature-current">--°F</span>
-                            <span id="status-current">Loading...</span>
-                        </div>
-                        <div class="weather-details">
-                            <div><span>Humidity:</span> <span id="humidity-current">--%</span></div>
-                            <div><span>Wind:</span> <span id="wind-speed-current">-- mph</span></div>
-                            <div><span>Pressure:</span> <span id="pressure-current">-- hPa</span></div>
-                            <div><span>Visibility:</span> <span id="visibility-current">-- mile</span></div>
-                            <div><span>Sunrise:</span> <span id="sunrise-time">--</span></div>
-                            <div><span>Sunset:</span> <span id="sunset-time">--</span></div>
-                        </div>
-                        <div id="forecast-table-container" class="mt-4">
-                            <p class="text-gray-600 text-center">Loading forecast data...</p></div>
-                    </div>
+    /* 기본적으로 너비에 맞춰 16:9 비율로 높이 계산 */
+    width: 100vw;
+    height: calc(100vw * 9 / 16);
 
-                    <div class="top-info-slide" id="top-info-slide-3">
-                        <h3>USD to KRW Exchange Rate</h3>
-                        <div class="exchange-rate-info">
-                            <p>Current Rate: <span id="current-exchange-rate-value">Loading...</span></p>
-                        </div>
-                        <div class="exchange-rate-chart-container">
-                            <canvas id="exchangeRateChartCanvas"></canvas>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    /* 하지만 화면 크기를 벗어나지 않도록 최대값 설정 */
+    max-height: 100vh;
+    max-width: calc(100vh * 16 / 9);
 
-            <div class="chart-slider-container">
-                <div class="chart-slide active" id="chart-slide-1">
-                    <div class="chart-and-table-wrapper">
-                        <div class="chart-section">
-                            <h2>KCCI: KOBC Container Composite Index, 종합지수(Point)와 그 외 항로별($/FEU)</h2>
-                            <div class="chart-container">
-                                <canvas id="KCCIChart"></canvas>
-                            </div>
-                        </div>
-                        <div class="table-section data-table-container" id="KCCITableContainer">
-                        </div>
-                    </div>
-                </div>
+    padding: 0;
+    background-color: #f0f0f0; /* 배경색을 body와 동일하게 설정 */
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    
+    /* SCALABILITY FIX: 모든 rem 단위의 기준이 되는 폰트 크기를 화면 높이에 비례하도록 설정 */
+    font-size: 1.5vh;
+}
 
-                <div class="chart-slide" id="chart-slide-2">
-                    <div class="chart-and-table-wrapper">
-                        <div class="chart-section">
-                            <h2>SCFI: Shanghai Containerized Freight Index, 종합지수($/TEU), 미주항로별($/FEU), 그 외 항로별($/TEU)</h2>
-                            <div class="chart-container">
-                                <canvas id="SCFIChart"></canvas>
-                            </div>
-                        </div>
-                        <div class="table-section data-table-container" id="SCFITableContainer">
-                        </div>
-                    </div>
-                </div>
+/* 화면이 16:9 비율보다 넓어질 경우, 높이에 맞춰 너비 계산 */
+@media (min-aspect-ratio: 16/9) {
+    .container {
+        width: calc(100vh * 16 / 9);
+        height: 100vh;
+        /* SCALABILITY FIX: 화면 비율이 바뀌어도 기준 폰트 크기를 유지 */
+        font-size: 1.5vh;
+    }
+}
 
-                <div class="chart-slide" id="chart-slide-3">
-                    <div class="chart-and-table-wrapper">
-                        <div class="chart-section">
-                            <h2>WCI: World Container Index, 종합지수(Point)와 각 항로별($/FEU)</h2>
-                            <div class="chart-container">
-                                <canvas id="WCIChart"></canvas>
-                            </div>
-                        </div>
-                        <div class="table-section data-table-container" id="WCITableContainer">
-                        </div>
-                    </div>
-                </div>
+/* 헤더 스타일 */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 0.5rem 1.5rem; /* rem 단위로 변경 */
+    margin-bottom: 0.5rem; /* rem 단위로 변경 */
+    border-bottom: 1px solid #eee;
+}
 
-                <div class="chart-slide" id="chart-slide-4">
-                    <div class="chart-and-table-wrapper">
-                        <div class="chart-section">
-                            <h2>IACI: Intra Asia Container Index, 종합지수(Point)</h2>
-                            <div class="chart-container">
-                                <canvas id="IACIChart"></canvas>
-                            </div>
-                        </div>
-                        <div class="table-section data-table-container" id="IACITableContainer">
-                        </div>
-                    </div>
-                </div>
+.dashboard-logo {
+    width: 12rem; /* rem 단위로 변경 */
+    height: auto;
+    order: 2;
+    margin-left: 1.5rem; /* rem 단위로 변경 */
+    margin-right: 0;
+}
 
-                <div class="chart-slide" id="chart-slide-5">
-                    <div class="chart-and-table-wrapper">
-                        <div class="chart-section">
-                            <h2>Blank Sailing, %</h2>
-                            <div class="chart-container">
-                                <canvas id="blankSailingChart"></canvas>
-                            </div>
-                        </div>
-                        <div class="table-section data-table-container" id="BLANKSAILINGTableContainer">
-                        </div>
-                    </div>
-                </div>
+header h1 {
+    font-size: 2.2rem; /* rem 단위로 변경 */
+    color: #003A52;
+    margin-bottom: 0;
+    font-weight: 700;
+    order: 1;
+}
 
-                <div class="chart-slide" id="chart-slide-6">
-                    <div class="chart-and-table-wrapper">
-                        <div class="chart-section">
-                            <h2>FBX: Freightos Baltic Index, 종합지수(Point)와 각 항로별($/FEU)</h2>
-                            <div class="chart-container">
-                                <canvas id="FBXChart"></canvas>
-                            </div>
-                        </div>
-                        <div class="table-section data-table-container" id="FBXTableContainer">
-                        </div>
-                    </div>
-                </div>
+/* 대시보드 그리드 컨테이너 */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 0.5rem; /* rem 단위로 변경 */
+    flex-grow: 1;
+    overflow: hidden;
+    padding: 0.5rem; /* rem 단위로 변경 */
+}
 
-                <div class="chart-slide" id="chart-slide-7">
-                    <div class="chart-and-table-wrapper">
-                        <div class="chart-section">
-                            <h2>XSI: Xeneta Shipping Index, 각 항로별($/FEU)</h2>
-                            <div class="chart-container">
-                                <canvas id="XSIChart"></canvas>
-                            </div>
-                        </div>
-                        <div class="table-section data-table-container" id="XSITableContainer">
-                        </div>
-                    </div>
-                </div>
+/* World Clocks 섹션 스타일 */
+.world-clock-list {
+    margin-top: 2.5rem; /* rem 단위로 변경 */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); /* rem 단위로 변경 */
+    gap: 0.25rem 0.5rem;
+    padding: 0 0.5rem;
+}
 
-                <div class="chart-slide" id="chart-slide-8">
-                    <div class="chart-and-table-wrapper">
-                        <div class="chart-section">
-                            <h2>MBCI: MB Shipbrokers Container Index, 종합지수(Index, Jan 1995 = 1,000)</h2>
-                            <div class="chart-container">
-                                <canvas id="MBCIChart"></canvas>
-                            </div>
-                        </div>
-                        <div class="table-section data-table-container" id="MBCITableContainer">
-                        </div>
-                    </div>
-                </div>
-            </div> </div> </div> <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+.world-clock-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.2rem 0.25rem;
+    font-size: 1.2rem; /* rem 단위로 변경 */
+    line-height: 1.2;
+    white-space: nowrap;
+}
 
-    <script src="js/dashboard.js"></script>
-</body>
-</html>
+/* 카드 내부 헤더 스타일 */
+.chart-section h2,
+.announcements-section h2,
+.table-section h3,
+.top-info-slide h3 {
+    text-align: left;
+    padding-left: 1.5rem; /* rem 단위로 변경 */
+    padding-bottom: 0.5rem; /* rem 단위로 변경 */
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 1.5rem; /* rem 단위로 변경 */
+    margin-top: 0;
+    font-size: 1.5rem; /* rem 단위로 변경 */
+    color: #003A52;
+    font-weight: 700;
+}
+
+/* 차트와 테이블 래퍼 */
+.chart-and-table-wrapper {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 0.8rem; /* rem 단위로 변경 */
+    padding: 1.5rem; /* rem 단위로 변경 */
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem; /* rem 단위로 변경 */
+    min-height: 25rem; /* rem 단위로 변경 */
+    box-sizing: border-box;
+}
+
+.chart-section {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 0;
+    flex: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-container {
+    position: relative;
+    min-height: 25rem; /* rem 단위로 변경 */
+    width: 100%;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+.chart-slider-container {
+    flex-grow: 1;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 0.5rem; /* rem 단위로 변경 */
+}
+
+.chart-slide {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+.chart-slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center;
+    margin-top: 0.5rem; /* rem 단위로 변경 */
+    padding-top: 0.5rem; /* rem 단위로 변경 */
+    border-top: 1px solid #eee;
+    color: #777;
+    font-size: 0.9rem; /* rem 단위로 변경 */
+}
+
+/* 상단 정보 슬라이더 컨테이너 */
+.top-info-slider-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.8rem; /* rem 단위로 변경 */
+    background-color: #fff;
+    padding: 0.5rem; /* rem 단위로 변경 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-info-slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 1.1rem; /* rem 단위로 변경 */
+    color: #003A52;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    padding: 0 1.5rem; /* rem 단위로 변경 */
+    box-sizing: border-box;
+}
+
+.top-info-slide.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+.top-info-slide h3 {
+    position: absolute;
+    top: 1rem; /* rem 단위로 변경 */
+    left: 1.5rem; /* rem 단위로 변경 */
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    z-index: 20;
+    width: calc(100% - 3rem); /* rem 단위로 변경 */
+    text-align: left;
+}
+
+/* 공지사항 섹션 */
+.announcements-section {
+    background-color: #fff;
+    padding: 1.5rem; /* rem 단위로 변경 */
+    border-radius: 1rem; /* rem 단위로 변경 */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.announcements-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.announcements-list li {
+    padding: 0.6rem 0; /* rem 단위로 변경 */
+    border-bottom: 1px dashed #eee;
+    color: #555;
+    font-size: 1.2rem; /* rem 단위로 변경, 가독성을 위해 약간 키움 */
+    text-align: left;
+    line-height: 1.4;
+}
+
+.announcements-list li:last-child {
+    border-bottom: none;
+}
+
+/* 날씨 정보 스타일 */
+.weather-current-info {
+    margin-top: 2.5rem; /* rem 단위로 변경 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+}
+
+.weather-current-info #weather-icon-current {
+    width: 4rem; /* rem 단위로 변경 */
+    height: 4rem; /* rem 단위로 변경 */
+    object-fit: contain;
+}
+
+.weather-current-info #temperature-current {
+    font-size: 2rem; /* rem 단위로 변경 */
+    font-weight: bold;
+}
+
+.weather-current-info #status-current {
+    font-size: 1.2rem; /* rem 단위로 변경 */
+    color: #666;
+}
+
+.weather-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3rem; /* rem 단위로 변경 */
+    width: 95%;
+    margin: 0.3rem auto 0; /* rem 단위로 변경 */
+    font-size: 1rem; /* rem 단위로 변경 */
+    line-height: 1.2;
+}
+
+.weather-details div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 0.4rem; /* rem 단위로 변경 */
+    border-bottom: 1px dotted #ccc;
+}
+
+.weather-details div:last-child, .weather-details div:nth-last-child(2) {
+    border-bottom: none;
+}
+
+/* 날씨 예보 테이블 */
+.forecast-table {
+    width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+    font-size: 1rem; /* rem 단위로 변경 */
+}
+
+.forecast-table th,
+.forecast-table td {
+    border: 1px solid #e2e8f0;
+    padding: 0.4rem 0.6rem !important; /* rem 단위로 변경 */
+    font-size: 1rem; /* rem 단위로 변경 */
+    vertical-align: middle;
+    line-height: 1.2;
+}
+
+/* 환율 정보 스타일 */
+.exchange-rate-info {
+    margin-top: 2.5rem; /* rem 단위로 변경 */
+    margin-bottom: 0.5rem; /* rem 단위로 변경 */
+}
+
+.exchange-rate-info #current-exchange-rate-value {
+    font-size: 1.5rem; /* rem 단위로 변경 */
+    font-weight: bold;
+    color: #00657e;
+}
+
+.exchange-rate-chart-container {
+    position: relative;
+    height: 65%;
+    width: 95%;
+    margin: 0.5rem auto 0; /* rem 단위로 변경 */
+}
+
+/* 테이블 섹션 (KCCI Indices) 스타일 */
+.table-section {
+    background-color: transparent;
+    padding: 0;
+    overflow-y: auto;
+    flex: 1;
+    height: 100%;
+    margin-top: 2.5rem; /* rem 단위로 변경 */
+}
+
+/* 다른 모든 테이블 공통 스타일 */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem; /* rem 단위로 변경 */
+    table-layout: fixed;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #e0e0e0;
+    padding: 0.4rem 0.8rem; /* rem 단위로 변경 */
+    text-align: center;
+    vertical-align: middle;
+}
+
+.data-table th {
+    background-color: #f8f8f8;
+    font-weight: 600;
+    color: #003A52;
+}
+
+.top-content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
