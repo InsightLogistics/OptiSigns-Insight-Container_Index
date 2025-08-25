@@ -24,7 +24,6 @@ html, body {
     width: 100vw;
     height: calc(100vw * 9 / 16);
     max-height: 100vh;
-    max-width: calc(100vh * 16 / 9);
     
     padding: 0;
     background-color: transparent;
@@ -40,12 +39,8 @@ html, body {
 /* 뷰포트가 16:9 비율보다 넓을 경우 */
 @media (min-aspect-ratio: 16/9) {
     .container {
-        width: calc(100vh * 16 / 9);
+        width: 100vw; /* 화면 전체 너비 사용 */
         height: 100vh;
-        /* margin-left: auto; 제거 */
-        /* margin-right: auto; 제거 */
-        left: 50%; /* 중앙 정렬 필요시만 추가 */
-        transform: translateX(-50%); /* 중앙 정렬 필요시만 추가 */
     }
 }
 
