@@ -16,8 +16,9 @@ html, body {
 .container {
     position: absolute;
     top: 0;
-    left: 50%;  /* 중앙 정렬을 위해 추가 */
-    transform: translateX(-50%); /* 중앙 정렬을 위해 추가 */
+    /* left: 50%; 제거 */
+    /* transform: translateX(-50%); 제거 */
+    left: 0; /* 추가: 왼쪽에 붙이기 */
     
     /* 16:9 비율 유지하며 화면 채우기 */
     width: 100vw;
@@ -34,6 +35,18 @@ html, body {
     
     display: flex;
     flex-direction: column;
+}
+
+/* 뷰포트가 16:9 비율보다 넓을 경우 */
+@media (min-aspect-ratio: 16/9) {
+    .container {
+        width: calc(100vh * 16 / 9);
+        height: 100vh;
+        /* margin-left: auto; 제거 */
+        /* margin-right: auto; 제거 */
+        left: 50%; /* 중앙 정렬 필요시만 추가 */
+        transform: translateX(-50%); /* 중앙 정렬 필요시만 추가 */
+    }
 }
 
 /* 헤더 스타일 */
