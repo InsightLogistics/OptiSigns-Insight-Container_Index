@@ -2,8 +2,8 @@
 
 /* 전체 페이지 레이아웃 및 폰트 설정 */
 html, body {
-    width: 105vw;
-    height: 105vh;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -16,9 +16,8 @@ html, body {
 .container {
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    transform: none;
+    left: 50%;  /* 중앙 정렬을 위해 추가 */
+    transform: translateX(-50%); /* 중앙 정렬을 위해 추가 */
     
     /* 16:9 비율 유지하며 화면 채우기 */
     width: 100vw;
@@ -42,9 +41,8 @@ html, body {
     .container {
         width: calc(100vh * 16 / 9);
         height: 100vh;
-        /* media 쿼리 안에서도 가운데 정렬이 유지되도록 추가 */
-        margin-left: auto; /* <-- 이 줄을 추가 */
-        margin-right: auto; /* <-- 이 줄을 추가 */
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
