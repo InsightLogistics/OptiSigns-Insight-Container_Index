@@ -23,7 +23,6 @@ html, body {
     width: 100vw;
     height: calc(100vw * 9 / 16);
     max-height: 100vh;
-    /* max-width: calc(100vh * 16 / 9); 이 줄을 제거해야 함! */
     
     padding: 0;
     background-color: transparent;
