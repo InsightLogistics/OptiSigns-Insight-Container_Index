@@ -1,44 +1,3 @@
-// --- Start of 16:9 Ratio Scaling Code ---
-
-/**
- * This function calculates and applies the correct scale to the dashboard container
- * to maintain a strict 16:9 aspect ratio, centering it within the viewport.
- */
-function resizeDashboard() {
-    const container = document.querySelector('.container');
-    const wrapper = document.querySelector('#viewport-wrapper');
-
-    // If the necessary elements don't exist, stop the function.
-    if (!container || !wrapper) {
-        console.error("Dashboard container or wrapper not found. Resizing will not work.");
-        return;
-    }
-
-    // The dashboard's fixed design resolution (16:9).
-    const baseWidth = 1920;
-    const baseHeight = 1080;
-
-    // The browser window's current inner dimensions.
-    const availableWidth = window.innerWidth;
-    const availableHeight = window.innerHeight;
-
-    // Calculate the scale ratio by comparing the available space to the base resolution.
-    // We use Math.min to ensure the dashboard fits within the smaller of the two dimensions (width or height).
-    const scale = Math.min(availableWidth / baseWidth, availableHeight / baseHeight);
-
-    // Apply the calculated scale using a CSS transform.
-    container.style.transform = `scale(${scale})`;
-
-    // To keep the scaled container centered, calculate the leftover space and apply it as a margin.
-    // This is necessary because transform-origin is set to the top-left corner in the CSS.
-    const newWidth = baseWidth * scale;
-    const newHeight = baseHeight * scale;
-    container.style.marginLeft = `${(availableWidth - newWidth) / 2}px`;
-    container.style.marginTop = `${(availableHeight - newHeight) / 2}px`;
-}
-
-// --- End of 16:9 Ratio Scaling Code ---
-
 let KCCIChart;
 let SCFIChart;
 let WCIChart;
@@ -52,8 +11,6 @@ let exchangeRateChart;
 const DATA_JSON_URL = 'data/crawling_data.json';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Call resizeDashboard once the DOM is loaded to set the initial size.
-    resizeDashboard();
     const setupChart = (chartId, type, datasets, additionalOptions = {}, isAggregated = false) => {
         const ctx = document.getElementById(chartId);
         if (ctx) {
@@ -1021,8 +978,6 @@ const createDatasetsFromTableRows = (indexType, chartData, tableRows) => {
             }
         }
     }
+
     loadAndDisplayData();
 });
-
-// Add an event listener to call resizeDashboard whenever the window is resized.
-window.addEventListener('resize', resizeDashboard);
