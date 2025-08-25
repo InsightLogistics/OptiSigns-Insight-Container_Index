@@ -60,9 +60,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.4vmin 2.8vmin;
+    padding: 1.4vmin 0.9vmin; /* 좌우 패딩 수정 */
     border-bottom: 0.1vmin solid #eee;
-    background-color: #fff; /* 헤더 배경 추가 */
+    /* background-color: #fff; */ /* 헤더 흰색 배경 제거 */
 }
 
 .dashboard-logo {
@@ -85,7 +85,7 @@ header h1 {
     gap: 0.9vmin;
     flex-grow: 1;
     overflow: hidden;
-    padding: 0.9vmin;
+    padding: 0.9vmin 0; /* 좌우 패딩 제거 */
 }
 
 .top-content-grid {
@@ -411,11 +411,11 @@ header h1 {
 /* 푸터 스타일 */
 footer {
     text-align: center;
-    padding: 1.4vmin;
+    padding: 1.4vmin 0.9vmin; /* 좌우 패딩 수정 */
     border-top: 0.1vmin solid #eee;
     color: #777;
     font-size: 1.3vmin;
-    background-color: #fff; /* 푸터 배경 추가 */
+    /* background-color: #fff; */ /* 푸터 배경 제거 */
 }
 
 /* 색상 유틸리티 */
