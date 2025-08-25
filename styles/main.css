@@ -1,50 +1,42 @@
 /* styles/main.css */
 
-/* 전체 페이지 레이아웃 및 폰트 설정 */
+/* 전체 페이지 레이아웃 및 폰트 설정
+  - vmin 단위를 사용하여 뷰포트의 가장 짧은 길이에 비례하여 크기가 조절되도록 설정합니다.
+  - 1vmin은 뷰포트 너비 또는 높이 중 작은 값의 1%와 같습니다.
+  - 기준 뷰포트를 1920x1080으로 가정하고 변환 (1vmin = 10.8px)
+*/
 html, body {
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
     font-family: 'Inter', sans-serif;
     background-color: #f0f0f0;
     color: #333;
+    font-size: 1.5vmin; /* 기본 폰트 크기를 vmin으로 설정 (약 16px 기준) */
     line-height: 1.6;
-    /* SCALABILITY FIX: 폰트 크기 기준을 너비(vw)와 높이(vh) 모두에 반응하도록 설정합니다. */
-    /* 이렇게 하면 모든 rem 단위가 화면 크기에 맞춰 동적으로 조절됩니다. */
-    font-size: calc(0.5vh + 0.5vw);
 }
 
 .container {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* 화면 정중앙에 배치 */
-
-    /* 기본적으로 너비에 맞춰 16:9 비율로 높이 계산 */
+    transform: translate(-50%, -50%);
+    
+    /* 16:9 비율 유지 */
     width: 100vw;
-    height: calc(100vw * 9 / 16);
-
-    /* 하지만 화면 크기를 벗어나지 않도록 최대값 설정 */
+    height: 56.25vw; /* 100 * 9 / 16 */
+    max-width: 177.78vh; /* 100 * 16 / 9 */
     max-height: 100vh;
-    max-width: calc(100vh * 16 / 9);
-
-    padding: 0;
-    background-color: #f0f0f0; /* 배경색을 body와 동일하게 설정 */
+    
+    background-color: #fff; /* 콘텐츠 배경색을 흰색으로 설정 */
     box-sizing: border-box;
     overflow: hidden;
-    
     display: flex;
     flex-direction: column;
-}
-
-/* 화면이 16:9 비율보다 넓어질 경우, 높이에 맞춰 너비 계산 */
-@media (min-aspect-ratio: 16/9) {
-    .container {
-        width: calc(100vh * 16 / 9);
-        height: 100vh;
-    }
+    border-radius: 1.5vmin;
+    box-shadow: 0 0.4vmin 1.2vmin rgba(0, 0, 0, 0.1);
 }
 
 /* 헤더 스타일 */
@@ -52,26 +44,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    padding: 0.5rem 1.5rem; /* rem 단위로 변경 */
-    margin-bottom: 0.5rem; /* rem 단위로 변경 */
-    border-bottom: 1px solid #eee;
+    padding: 1.4vmin 2.8vmin;
+    border-bottom: 0.1vmin solid #eee;
 }
 
 .dashboard-logo {
-    width: 12rem; /* rem 단위로 변경 */
+    width: 11vmin; /* 120px -> 11vmin */
     height: auto;
-    order: 2;
-    margin-left: 1.5rem; /* rem 단위로 변경 */
-    margin-right: 0;
 }
 
 header h1 {
-    font-size: 2.2rem; /* rem 단위로 변경 */
+    font-size: 3.2vmin; /* 2.2em -> 35px -> 3.2vmin */
     color: #003A52;
-    margin-bottom: 0;
+    margin: 0;
     font-weight: 700;
-    order: 1;
 }
 
 /* 대시보드 그리드 컨테이너 */
@@ -79,86 +65,114 @@ header h1 {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
-    gap: 0.5rem; /* rem 단위로 변경 */
+    gap: 0.9vmin; /* 10px -> 0.9vmin */
     flex-grow: 1;
     overflow: hidden;
-    padding: 0.5rem; /* rem 단위로 변경 */
+    padding: 0.9vmin;
 }
 
-/* World Clocks 섹션 스타일 */
-.world-clock-list {
-    margin-top: 2.5rem; /* rem 단위로 변경 */
+.top-content-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); /* rem 단위로 변경 */
-    gap: 0.25rem 0.5rem;
-    padding: 0 0.5rem;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.9vmin;
+}
+
+/* 카드 공통 스타일 */
+.card {
+    background-color: #fff;
+    padding: 1.8vmin; /* 20px -> 1.8vmin */
+    border-radius: 1.1vmin; /* 12px -> 1.1vmin */
+    box-shadow: 0 0.2vmin 0.6vmin rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-header {
+    text-align: left;
+    padding-bottom: 1.4vmin;
+    border-bottom: 0.1vmin solid #e0e0e0;
+    margin-bottom: 1.4vmin;
+    font-size: 1.8vmin; /* 1.2rem -> 19px -> 1.8vmin */
+    color: #003A52;
+    font-weight: 700;
+}
+
+/* 상단 정보 슬라이더 */
+.top-info-slider-container {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.4vmin;
+}
+
+.top-info-slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.top-info-slide.active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+}
+
+.top-info-slide h3 {
+    font-size: 1.8vmin;
+    margin-bottom: 1vmin;
+}
+
+.top-info-slide p {
+    font-size: 1.5vmin;
+}
+
+/* 세계 시간 */
+.world-clock-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11vmin, 1fr));
+    gap: 0.5vmin 1vmin;
+    padding: 0 1vmin;
+    margin-top: 1vmin;
 }
 
 .world-clock-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.2rem 0.25rem;
-    font-size: 1.2rem; /* rem 단위로 변경 */
-    line-height: 1.2;
+    font-size: 1.3vmin; /* 0.8em -> 14px -> 1.3vmin */
+    line-height: 1.3;
     white-space: nowrap;
 }
 
-/* 카드 내부 헤더 스타일 */
-.chart-section h2,
-.announcements-section h2,
-.table-section h3,
-.top-info-slide h3 {
-    text-align: left;
-    padding-left: 1.5rem; /* rem 단위로 변경 */
-    padding-bottom: 0.5rem; /* rem 단위로 변경 */
-    border-bottom: 1px solid #e0e0e0;
-    margin-bottom: 1.5rem; /* rem 단위로 변경 */
-    margin-top: 0;
-    font-size: 1.5rem; /* rem 단위로 변경 */
-    color: #003A52;
-    font-weight: 700;
+.world-clock-item span:first-child {
+    color: #555;
+    margin-bottom: 0.3vmin;
 }
 
-/* 차트와 테이블 래퍼 */
-.chart-and-table-wrapper {
-    background-color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    border-radius: 0.8rem; /* rem 단위로 변경 */
-    padding: 1.5rem; /* rem 단위로 변경 */
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem; /* rem 단위로 변경 */
-    min-height: 25rem; /* rem 단위로 변경 */
-    box-sizing: border-box;
+.world-clock-item span:last-child {
+    font-weight: bold;
+    color: #333;
 }
 
-.chart-section {
-    background-color: transparent;
-    box-shadow: none;
-    border-radius: 0;
-    padding: 0;
-    margin-bottom: 0;
-    flex: 2;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.chart-container {
-    position: relative;
-    min-height: 25rem; /* rem 단위로 변경 */
-    width: 100%;
-    margin: 0 auto;
-    flex-grow: 1;
-}
-
+/* 차트 슬라이더 */
 .chart-slider-container {
     flex-grow: 1;
     position: relative;
     overflow: hidden;
     display: flex;
-    margin-bottom: 0.5rem; /* rem 단위로 변경 */
 }
 
 .chart-slide {
@@ -170,82 +184,53 @@ header h1 {
     position: absolute;
     top: 0;
     left: 0;
-    box-sizing: border-box;
     z-index: 0;
+    display: flex; /* .chart-and-table-wrapper를 위해 추가 */
 }
 
 .chart-slide.active {
     opacity: 1;
     visibility: visible;
     z-index: 10;
+    position: relative; /* .chart-and-table-wrapper를 위해 추가 */
 }
 
-/* 푸터 스타일 */
-footer {
-    text-align: center;
-    margin-top: 0.5rem; /* rem 단위로 변경 */
-    padding-top: 0.5rem; /* rem 단위로 변경 */
-    border-top: 1px solid #eee;
-    color: #777;
-    font-size: 0.9rem; /* rem 단위로 변경 */
-}
-
-/* 상단 정보 슬라이더 컨테이너 */
-.top-info-slider-container {
-    position: relative;
-    overflow: hidden;
-    border-radius: 0.8rem; /* rem 단위로 변경 */
-    background-color: #fff;
-    padding: 0.5rem; /* rem 단위로 변경 */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+.chart-and-table-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.top-info-slide {
-    display: none;
+    flex-direction: row;
+    gap: 1.4vmin;
     width: 100%;
     height: 100%;
-    text-align: center;
-    font-size: 1.1rem; /* rem 단위로 변경 */
-    color: #003A52;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
-    padding: 0 1.5rem; /* rem 단위로 변경 */
-    box-sizing: border-box;
 }
 
-.top-info-slide.active {
+.chart-section {
+    flex: 2;
     display: flex;
-    opacity: 1;
-    visibility: visible;
+    flex-direction: column;
 }
 
-.top-info-slide h3 {
-    position: absolute;
-    top: 1rem; /* rem 단위로 변경 */
-    left: 1.5rem; /* rem 단위로 변경 */
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    z-index: 20;
-    width: calc(100% - 3rem); /* rem 단위로 변경 */
-    text-align: left;
-}
-
-/* 공지사항 섹션 */
-.announcements-section {
-    background-color: #fff;
-    padding: 1.5rem; /* rem 단위로 변경 */
-    border-radius: 1rem; /* rem 단위로 변경 */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+.chart-container {
+    position: relative;
+    flex-grow: 1;
+    min-height: 23vmin; /* 250px -> 23vmin */
     width: 100%;
-    box-sizing: border-box;
+}
+
+.chart-container canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* 테이블 섹션 (KCCI Indices) */
+.table-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.7vmin; /* 40px -> 3.7vmin */
+}
+
+/* 공지사항 */
+.announcements-section {
     overflow-y: auto;
 }
 
@@ -256,136 +241,163 @@ footer {
 }
 
 .announcements-list li {
-    padding: 0.6rem 0; /* rem 단위로 변경 */
-    border-bottom: 1px dashed #eee;
-    color: #555;
-    font-size: 1.2rem; /* rem 단위로 변경, 가독성을 위해 약간 키움 */
+    padding: 0.8vmin 0;
+    border-bottom: 0.1vmin dashed #eee;
+    font-size: 1.4vmin; /* 0.85em -> 14.5px -> 1.4vmin */
     text-align: left;
-    line-height: 1.4;
+    line-height: 1.2;
 }
 
 .announcements-list li:last-child {
     border-bottom: none;
 }
 
-/* 날씨 정보 스타일 */
+/* 날씨 */
 .weather-current-info {
-    margin-top: 2.5rem; /* rem 단위로 변경 */
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0;
-    gap: 0.5rem;
-    flex-wrap: nowrap;
+    gap: 1vmin;
+    margin-top: 1vmin;
 }
 
-.weather-current-info #weather-icon-current {
-    width: 4rem; /* rem 단위로 변경 */
-    height: 4rem; /* rem 단위로 변경 */
-    object-fit: contain;
+#weather-icon-current {
+    width: 3.7vmin; /* 40px -> 3.7vmin */
+    height: 3.7vmin;
 }
 
-.weather-current-info #temperature-current {
-    font-size: 2rem; /* rem 단위로 변경 */
+#temperature-current {
+    font-size: 2.8vmin; /* 1.5em -> 24px -> 2.8vmin */
     font-weight: bold;
 }
 
-.weather-current-info #status-current {
-    font-size: 1.2rem; /* rem 단위로 변경 */
+#status-current {
+    font-size: 1.6vmin; /* 1em -> 16px -> 1.6vmin */
     color: #666;
 }
 
 .weather-details {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0.3rem; /* rem 단위로 변경 */
+    gap: 0.5vmin;
     width: 95%;
-    margin: 0.3rem auto 0; /* rem 단위로 변경 */
-    font-size: 1rem; /* rem 단위로 변경 */
+    margin: 0.5vmin auto 0;
+    font-size: 1.2vmin; /* 0.7em -> 12px -> 1.2vmin */
     line-height: 1.2;
 }
 
 .weather-details div {
     display: flex;
     justify-content: space-between;
-    padding: 0.2rem 0.4rem; /* rem 단위로 변경 */
-    border-bottom: 1px dotted #ccc;
+    padding: 0.3vmin 0.6vmin;
+    border-bottom: 0.1vmin dotted #ccc;
 }
-
 .weather-details div:last-child, .weather-details div:nth-last-child(2) {
     border-bottom: none;
 }
 
-/* 날씨 예보 테이블 */
-.forecast-table {
-    width: 100%;
-    table-layout: fixed;
-    border-collapse: collapse;
-    font-size: 1rem; /* rem 단위로 변경 */
-}
-
-.forecast-table th,
-.forecast-table td {
-    border: 1px solid #e2e8f0;
-    padding: 0.4rem 0.6rem; /* rem 단위로 변경 */
-    font-size: 1rem; /* rem 단위로 변경 */
-    vertical-align: middle;
-    line-height: 1.2;
-}
-
-/* 환율 정보 스타일 */
+/* 환율 */
 .exchange-rate-info {
-    margin-top: 2.5rem; /* rem 단위로 변경 */
-    margin-bottom: 0.5rem; /* rem 단위로 변경 */
+    margin-top: 1vmin;
 }
 
-.exchange-rate-info #current-exchange-rate-value {
-    font-size: 1.5rem; /* rem 단위로 변경 */
+#current-exchange-rate-value {
+    font-size: 1.8vmin; /* 1rem -> 16px -> 1.8vmin */
     font-weight: bold;
     color: #00657e;
+    margin-bottom: 1vmin;
 }
 
 .exchange-rate-chart-container {
     position: relative;
-    height: 65%;
-    width: 95%;
-    margin: 0.5rem auto 0; /* rem 단위로 변경 */
-}
-
-/* 테이블 섹션 (KCCI Indices) 스타일 */
-.table-section {
-    background-color: transparent;
-    padding: 0;
-    overflow-y: auto;
-    flex: 1;
     height: 100%;
-    margin-top: 2.5rem; /* rem 단위로 변경 */
+    flex-grow: 1;
+    width: 95%;
+    margin: 1vmin auto 0;
 }
 
-/* 다른 모든 테이블 공통 스타일 */
+/* 공용 테이블 스타일 */
 .data-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 1rem; /* rem 단위로 변경 */
+    font-size: 1.2vmin; /* 0.75em -> 12px -> 1.2vmin */
     table-layout: fixed;
+    flex-grow: 1; /* 테이블이 남은 공간을 채우도록 */
 }
 
 .data-table th, .data-table td {
-    border: 1px solid #e0e0e0;
-    padding: 0.4rem 0.8rem; /* rem 단위로 변경 */
+    border: 0.1vmin solid #e0e0e0;
+    padding: 0.6vmin 1vmin;
     text-align: center;
     vertical-align: middle;
+    word-wrap: break-word;
 }
 
 .data-table th {
     background-color: #f8f8f8;
     font-weight: 600;
     color: #003A52;
+    white-space: normal;
+    line-height: 1.2;
 }
 
-.top-content-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 0.5rem;
-    margin-bottom: 0.5rem;
+.data-table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
+
+/* KCCI 테이블 너비 */
+.table-section .data-table th:nth-child(1), .table-section .data-table td:nth-child(1) { width: 30%; }
+.table-section .data-table th:nth-child(2), .table-section .data-table td:nth-child(2) { width: 23.33%; }
+.table-section .data-table th:nth-child(3), .table-section .data-table td:nth-child(3) { width: 23.33%; }
+.table-section .data-table th:nth-child(4), .table-section .data-table td:nth-child(4) { width: 23.33%; }
+
+
+/* 날씨 예보 테이블 */
+.forecast-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 1.2vmin;
+}
+
+.forecast-table th, .forecast-table td {
+    border: 0.1vmin solid #e2e8f0;
+    padding: 0.7vmin 1vmin;
+    vertical-align: middle;
+    line-height: 1.2;
+}
+
+.forecast-table th {
+    background-color: #f8f8f8;
+    font-weight: 600;
+    color: #003A52;
+}
+
+.forecast-table th:first-child,
+.forecast-table td:first-child {
+    width: 20%;
+    text-align: left;
+    padding-left: 1vmin;
+}
+
+.forecast-table th:not(:first-child),
+.forecast-table td:not(:first-child) {
+    width: 16%;
+    text-align: center;
+}
+
+/* 푸터 스타일 */
+footer {
+    text-align: center;
+    padding: 1.4vmin;
+    border-top: 0.1vmin solid #eee;
+    color: #777;
+    font-size: 1.3vmin; /* 0.9em -> 14.4px -> 1.3vmin */
+}
+
+/* 색상 유틸리티 */
+.text-blue-500 { color: #3b82f6; }
+.text-red-500 { color: #ef4444; }
+.text-gray-700 { color: #374151; }
