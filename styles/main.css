@@ -36,16 +36,6 @@ html, body {
     flex-direction: column;
 }
 
-/* 뷰포트가 16:9 비율보다 넓을 경우 */
-@media (min-aspect-ratio: 16/9) {
-    .container {
-        width: calc(100vh * 16 / 9);
-        height: 100vh;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
 /* 헤더 스타일 */
 header {
     display: flex;
@@ -163,13 +153,15 @@ header h1 {
     font-size: 1.2rem; /* 폰트 크기 조정 */
     color: #003A52;
     font-weight: 700;
+    flex-shrink: 0; /* 제목 크기 고정 */
+    margin-bottom: 10px; /* 여백 추가 */
 }
 
 .chart-container {
     position: relative;
     width: 100%;
-    flex: 1; /* 추가: 남은 공간 채우기 */
-    min-height: 0; /* 추가: flex 아이템이 축소될 수 있도록 */
+    height: 70%; /* 고정 비율 높이로 변경 */
+    min-height: 0;
     margin: 0 auto;
 }
 
