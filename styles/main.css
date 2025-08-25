@@ -43,6 +43,9 @@ html, body {
     .container {
         width: 177.78vh; /* 100vh * 16 / 9 */
         height: 100vh;
+        /* 중앙 정렬은 transform으로 처리되므로 margin auto는 더 이상 필요 없음 */
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
@@ -52,7 +55,7 @@ header {
     align-items: center;
     justify-content: space-between;
     
-    padding: 0.5vmin 0; /* 5px 15px -> vmin 단위, 좌우 패딩 제거 */
+    padding: 0.5vmin 1.4vmin; /* vmin 단위, 좌우 패딩 유지 */
     margin-bottom: 0.5vmin; /* vmin 단위로 변경 */
     border-bottom: 0.1vmin solid #eee; /* vmin 단위로 변경 */
 }
@@ -66,12 +69,11 @@ header {
 }
 
 header h1 {
-    font-size: 3.2vmin; /* 2.2em -> vmin */
+    font-size: 2.2em; /* em 단위 유지 (vmin 기반) */
     color: #003A52;
     margin-bottom: 0;
     font-weight: 700;
     order: 1;
-    padding-left: 1.4vmin; /* header의 좌우 패딩을 없애고 제목에 직접 부여 */
 }
 
 /* 대시보드 그리드 컨테이너 */
@@ -82,7 +84,7 @@ header h1 {
     gap: 0.5vmin; /* vmin 단위로 변경 */
     flex-grow: 1;
     overflow: hidden;
-    padding: 0.5vmin 0; /* vmin 단위, 좌우 패딩 제거 */
+    padding: 0.5vmin; /* vmin 단위로 변경 */
 }
 
 /* World Clocks 섹션 스타일 */
@@ -131,8 +133,8 @@ header h1 {
 /* 차트 섹션 스타일 */
 .chart-and-table-wrapper {
     background-color: #fff;
-    box-shadow: 0 0.2vmin 0.8vmin rgba(0, 0, 0, 0.05); /* vmin 단위로 변경 */
-    border-radius: 0.8vmin; /* vmin 단위로 변경 */
+    box-shadow: 0 0.2vmin 0.7vmin rgba(0, 0, 0, 0.05); /* vmin 단위로 변경 */
+    border-radius: 0.7vmin; /* vmin 단위로 변경 */
     padding: 1.4vmin; /* vmin 단위로 변경 */
     display: flex;
     flex-direction: row;
@@ -170,7 +172,7 @@ header h1 {
     flex-grow: 1;
     position: relative;
     overflow: hidden;
-    border-radius: 0.8vmin; /* vmin 단위로 변경 */
+    border-radius: 0.7vmin; /* vmin 단위로 변경 */
     background-color: transparent;
     padding: 0;
     box-shadow: none;
@@ -227,10 +229,10 @@ footer {
 .top-info-slider-container {
     position: relative;
     overflow: hidden;
-    border-radius: 0.8vmin; /* vmin 단위로 변경 */
+    border-radius: 0.7vmin; /* vmin 단위로 변경 */
     background-color: #fff;
     padding: 0.5vmin; /* vmin 단위로 변경 */
-    box-shadow: 0 0.2vmin 0.8vmin rgba(0, 0, 0, 0.05); /* vmin 단위로 변경 */
+    box-shadow: 0 0.2vmin 0.7vmin rgba(0, 0, 0, 0.05); /* vmin 단위로 변경 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -286,7 +288,7 @@ footer {
     background-color: #fff;
     padding: 1.4vmin; /* vmin 단위로 변경 */
     border-radius: 0.9vmin; /* vmin 단위로 변경 */
-    box-shadow: 0 0.2vmin 0.8vmin rgba(0, 0, 0, 0.05); /* vmin 단위로 변경 */
+    box-shadow: 0 0.2vmin 0.7vmin rgba(0, 0, 0, 0.05); /* vmin 단위로 변경 */
     width: 100%;
     box-sizing: border-box;
     max-height: 44.4vmin; /* vmin 단위로 변경 */
@@ -441,43 +443,4 @@ footer {
     height: 65%;
     width: 95%;
     margin: 0 auto;
-    margin-top: 0.5vmin; /* vmin 단위로 변경 */
-}
-
-.exchange-rate-chart-container canvas {
-    width: 100% !important;
-    height: 100% !important;
-}
-
-/* 테이블 섹션 (KCCI Indices) 스타일 */
-.table-section {
-    background-color: transparent;
-    padding: 0;
-    border-radius: 0;
-    box-shadow: none;
-    overflow-y: auto;
-    max-height: 44.4vmin; /* vmin 단위로 변경 */
-    flex: 1;
-    height: 100%;
-    margin-bottom: 0;
-    margin-top: 3.7vmin; /* vmin 단위로 변경 */
-}
-
-.table-section h3 {
-    font-size: 1.2rem;
-    color: #003A52;
-    font-weight: 700;
-}
-
-/* 다른 모든 테이블에 적용되는 공통 스타일 */
-.data-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 0.75em;
-    table-layout: fixed;
-}
-
-.data-table th, .data-table td {
-    border: 0.1vmin solid #e0e0e0; /* vmin 단위로 변경 */
-    padding: 0.4vmin 0.8vmin; /* vmin 단위로 변경 */
-    t
+    mar
