@@ -41,6 +41,7 @@ html, body {
     .container {
         width: 100vw; /* 화면 전체 너비 사용 */
         height: 100vh;
+        max-width: none; /* 기존 max-width 제거 */
     }
 }
 
