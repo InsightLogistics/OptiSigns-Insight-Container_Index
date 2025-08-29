@@ -2316,111 +2316,102 @@
         "IACI": [
             {
                 "date": "2024-08-31",
-                "IACI_Composite_Index": 894
+                "IACI_Composite_Index": 907
             },
             {
                 "date": "2024-09-15",
-                "IACI_Composite_Index": 668
+                "IACI_Composite_Index": 894
             },
             {
                 "date": "2024-09-30",
-                "IACI_Composite_Index": 589
-            },
-            {
-                "date": "2024-10-15",
-                "IACI_Composite_Index": 500
-            },
-            {
-                "date": "2024-10-31",
-                "IACI_Composite_Index": 573
-            },
-            {
-                "date": "2024-11-15",
-                "IACI_Composite_Index": 829
-            },
-            {
-                "date": "2024-11-30",
-                "IACI_Composite_Index": 864
-            },
-            {
-                "date": "2024-12-15",
-                "IACI_Composite_Index": 934
-            },
-            {
-                "date": "2024-12-31",
-                "IACI_Composite_Index": 879
-            },
-            {
-                "date": "2025-01-15",
-                "IACI_Composite_Index": 828
-            },
-            {
-                "date": "2025-01-31",
-                "IACI_Composite_Index": 726
-            },
-            {
-                "date": "2025-02-15",
-                "IACI_Composite_Index": 667
-            },
-            {
-                "date": "2025-02-28",
-                "IACI_Composite_Index": 615
-            },
-            {
-                "date": "2025-03-15",
-                "IACI_Composite_Index": 604
-            },
-            {
-                "date": "2025-03-31",
-                "IACI_Composite_Index": 601
-            },
-            {
-                "date": "2025-04-15",
                 "IACI_Composite_Index": 668
             },
             {
+                "date": "2024-10-15",
+                "IACI_Composite_Index": 589
+            },
+            {
+                "date": "2024-10-31",
+                "IACI_Composite_Index": 500
+            },
+            {
+                "date": "2024-11-15",
+                "IACI_Composite_Index": 573
+            },
+            {
+                "date": "2024-11-30",
+                "IACI_Composite_Index": 829
+            },
+            {
+                "date": "2024-12-15",
+                "IACI_Composite_Index": 864
+            },
+            {
+                "date": "2024-12-31",
+                "IACI_Composite_Index": 934
+            },
+            {
+                "date": "2025-01-15",
+                "IACI_Composite_Index": 879
+            },
+            {
+                "date": "2025-01-31",
+                "IACI_Composite_Index": 828
+            },
+            {
+                "date": "2025-02-15",
+                "IACI_Composite_Index": 726
+            },
+            {
+                "date": "2025-02-28",
+                "IACI_Composite_Index": 667
+            },
+            {
+                "date": "2025-03-15",
+                "IACI_Composite_Index": 615
+            },
+            {
+                "date": "2025-03-31",
+                "IACI_Composite_Index": 604
+            },
+            {
+                "date": "2025-04-15",
+                "IACI_Composite_Index": 601
+            },
+            {
                 "date": "2025-04-30",
-                "IACI_Composite_Index": 706
+                "IACI_Composite_Index": 668
             },
             {
                 "date": "2025-05-15",
-                "IACI_Composite_Index": 657
+                "IACI_Composite_Index": 706
             },
             {
                 "date": "2025-05-31",
-                "IACI_Composite_Index": 655
+                "IACI_Composite_Index": 657
             },
             {
                 "date": "2025-06-15",
-                "IACI_Composite_Index": 707
+                "IACI_Composite_Index": 655
             },
             {
                 "date": "2025-06-30",
-                "IACI_Composite_Index": 813
+                "IACI_Composite_Index": 707
             },
             {
                 "date": "2025-07-15",
-                "IACI_Composite_Index": 704
+                "IACI_Composite_Index": 813
             },
             {
                 "date": "2025-07-31",
-                "IACI_Composite_Index": 652
+                "IACI_Composite_Index": 704
             },
             {
                 "date": "2025-08-15",
-                "IACI_Composite_Index": 594
+                "IACI_Composite_Index": 652
             }
         ],
         "BLANKSAILING": [
-            {
-                "date": "2025-01-24",
-                "BLANKSAILING_Gemini_Cooperation": 10,
-                "BLANKSAILING_MSC": 10,
-                "BLANKSAILING_OCEAN_Alliance": 20,
-                "BLANKSAILING_Premier_Alliance": 30,
-                "BLANKSAILING_Others_Independent": 15,
-                "BLANKSAILING_Total": 17
-            },
             {
                 "date": "2025-01-31",
                 "BLANKSAILING_Gemini_Cooperation": 11,
@@ -2688,6 +2679,15 @@
                 "BLANKSAILING_MSC": 4,
                 "BLANKSAILING_OCEAN_Alliance": 7,
                 "BLANKSAILING_Premier_Alliance": 11,
+                "BLANKSAILING_Others_Independent": 7,
+                "BLANKSAILING_Total": 6
+            },
+            {
+                "date": "2025-08-29",
+                "BLANKSAILING_Gemini_Cooperation": 0,
+                "BLANKSAILING_MSC": 3,
+                "BLANKSAILING_OCEAN_Alliance": 8,
+                "BLANKSAILING_Premier_Alliance": 12,
                 "BLANKSAILING_Others_Independent": 7,
                 "BLANKSAILING_Total": 6
             }
@@ -6227,152 +6227,163 @@
                 "XSI_North_Europe_US_East_Coast": 1923,
                 "XSI_US_East_Coast_North_Europe": 617,
                 "XSI_North_Europe_South_America_East_Coast": 606
+            },
+            {
+                "date": "2025-08-28",
+                "XSI_East_Asia_North_Europe": 2757,
+                "XSI_North_Europe_East_Asia": 201,
+                "XSI_East_Asia_US_West_Coast": 1777,
+                "XSI_US_West_Coast_East_Asia": 655,
+                "XSI_East_Asia_South_America_East_Coast": 3193,
+                "XSI_North_Europe_US_East_Coast": 1901,
+                "XSI_US_East_Coast_North_Europe": 615,
+                "XSI_North_Europe_South_America_East_Coast": 609
             }
         ],
         "MBCI": [
             {
                 "date": "2024-08-30",
-                "MBCI_Value": 1176
-            },
-            {
-                "date": "2024-09-06",
-                "MBCI_Value": 1164
-            },
-            {
-                "date": "2024-09-13",
-                "MBCI_Value": 1147
-            },
-            {
-                "date": "2024-09-20",
-                "MBCI_Value": 1094
-            },
-            {
-                "date": "2024-09-27",
-                "MBCI_Value": 1095
-            },
-            {
-                "date": "2024-10-04",
-                "MBCI_Value": 1097
-            },
-            {
-                "date": "2024-10-11",
-                "MBCI_Value": 1149
-            },
-            {
-                "date": "2024-10-18",
-                "MBCI_Value": 1160
-            },
-            {
-                "date": "2024-10-25",
-                "MBCI_Value": 1183
-            },
-            {
-                "date": "2024-11-01",
-                "MBCI_Value": 1169
-            },
-            {
-                "date": "2024-11-08",
                 "MBCI_Value": 1195
             },
             {
-                "date": "2024-11-15",
+                "date": "2024-09-06",
+                "MBCI_Value": 1176
+            },
+            {
+                "date": "2024-09-13",
+                "MBCI_Value": 1164
+            },
+            {
+                "date": "2024-09-20",
+                "MBCI_Value": 1147
+            },
+            {
+                "date": "2024-09-27",
+                "MBCI_Value": 1094
+            },
+            {
+                "date": "2024-10-04",
+                "MBCI_Value": 1095
+            },
+            {
+                "date": "2024-10-11",
+                "MBCI_Value": 1097
+            },
+            {
+                "date": "2024-10-18",
+                "MBCI_Value": 1149
+            },
+            {
+                "date": "2024-10-25",
+                "MBCI_Value": 1160
+            },
+            {
+                "date": "2024-11-01",
+                "MBCI_Value": 1183
+            },
+            {
+                "date": "2024-11-08",
                 "MBCI_Value": 1169
+            },
+            {
+                "date": "2024-11-15",
+                "MBCI_Value": 1195
             },
             {
                 "date": "2024-11-22",
-                "MBCI_Value": 1168
-            },
-            {
-                "date": "2024-11-29",
                 "MBCI_Value": 1169
             },
             {
+                "date": "2024-11-29",
+                "MBCI_Value": 1168
+            },
+            {
                 "date": "2024-12-06",
-                "MBCI_Value": 1159
+                "MBCI_Value": 1169
             },
             {
                 "date": "2024-12-13",
-                "MBCI_Value": 1146
+                "MBCI_Value": 1159
             },
             {
                 "date": "2024-12-20",
-                "MBCI_Value": 1235
+                "MBCI_Value": 1146
             },
             {
                 "date": "2024-12-27",
-                "MBCI_Value": 1234
+                "MBCI_Value": 1235
             },
             {
                 "date": "2025-01-03",
-                "MBCI_Value": 1203
+                "MBCI_Value": 1234
             },
             {
                 "date": "2025-01-10",
-                "MBCI_Value": 1263
+                "MBCI_Value": 1203
             },
             {
                 "date": "2025-01-17",
-                "MBCI_Value": 1294
+                "MBCI_Value": 1263
             },
             {
                 "date": "2025-01-24",
-                "MBCI_Value": 1269
+                "MBCI_Value": 1294
             },
             {
                 "date": "2025-01-31",
-                "MBCI_Value": 1247
+                "MBCI_Value": 1269
             },
             {
                 "date": "2025-02-07",
-                "MBCI_Value": 1265
+                "MBCI_Value": 1247
             },
             {
                 "date": "2025-02-14",
-                "MBCI_Value": 1277
+                "MBCI_Value": 1265
             },
             {
                 "date": "2025-02-21",
-                "MBCI_Value": 1298
+                "MBCI_Value": 1277
             },
             {
                 "date": "2025-02-28",
-                "MBCI_Value": 1323
+                "MBCI_Value": 1298
             },
             {
                 "date": "2025-03-07",
-                "MBCI_Value": 1328
+                "MBCI_Value": 1323
             },
             {
                 "date": "2025-03-14",
-                "MBCI_Value": 1319
+                "MBCI_Value": 1328
             },
             {
                 "date": "2025-03-21",
-                "MBCI_Value": 1335
+                "MBCI_Value": 1319
             },
             {
                 "date": "2025-03-28",
-                "MBCI_Value": 1345
+                "MBCI_Value": 1335
             },
             {
                 "date": "2025-04-04",
-                "MBCI_Value": 1346
+                "MBCI_Value": 1345
             },
             {
                 "date": "2025-04-11",
-                "MBCI_Value": 1333
+                "MBCI_Value": 1346
             },
             {
                 "date": "2025-04-18",
-                "MBCI_Value": 1348
+                "MBCI_Value": 1333
             },
             {
                 "date": "2025-04-25",
-                "MBCI_Value": 1391
+                "MBCI_Value": 1348
             },
             {
                 "date": "2025-05-02",
-                "MBCI_Value": 1424
+                "MBCI_Value": 1391
             },
             {
                 "date": "2025-05-09",
@@ -6380,62 +6391,66 @@
             },
             {
                 "date": "2025-05-16",
-                "MBCI_Value": 1407
+                "MBCI_Value": 1424
             },
             {
                 "date": "2025-05-23",
-                "MBCI_Value": 1373
+                "MBCI_Value": 1407
             },
             {
                 "date": "2025-05-30",
-                "MBCI_Value": 1342
+                "MBCI_Value": 1373
             },
             {
                 "date": "2025-06-06",
-                "MBCI_Value": 1337
+                "MBCI_Value": 1342
             },
             {
                 "date": "2025-06-13",
-                "MBCI_Value": 1319
+                "MBCI_Value": 1337
             },
             {
                 "date": "2025-06-20",
-                "MBCI_Value": 1307
+                "MBCI_Value": 1319
             },
             {
                 "date": "2025-06-27",
-                "MBCI_Value": 1289
+                "MBCI_Value": 1307
             },
             {
                 "date": "2025-07-04",
-                "MBCI_Value": 1294
+                "MBCI_Value": 1289
             },
             {
                 "date": "2025-07-11",
-                "MBCI_Value": 1352
+                "MBCI_Value": 1294
             },
             {
                 "date": "2025-07-18",
-                "MBCI_Value": 1379
+                "MBCI_Value": 1352
             },
             {
                 "date": "2025-07-25",
-                "MBCI_Value": 1415
+                "MBCI_Value": 1379
             },
             {
                 "date": "2025-08-01",
-                "MBCI_Value": 1420
+                "MBCI_Value": 1415
             },
             {
                 "date": "2025-08-08",
-                "MBCI_Value": 1472
+                "MBCI_Value": 1420
             },
             {
                 "date": "2025-08-15",
-                "MBCI_Value": 1556
+                "MBCI_Value": 1472
             },
             {
                 "date": "2025-08-22",
+                "MBCI_Value": 1556
+            },
+            {
+                "date": "2025-08-29",
                 "MBCI_Value": 1514
             }
         ]
@@ -6851,11 +6866,11 @@
             "rows": [
                 {
                     "route": "IACI_종합지수",
-                    "current_index": 594.0,
-                    "previous_index": 652.0,
+                    "current_index": 584.0,
+                    "previous_index": 594.0,
                     "weekly_change": {
-                        "value": "-59.0",
-                        "percentage": "-9.91%",
+                        "value": "-10.0",
+                        "percentage": "-1.71%",
                         "color_class": "text-blue-500"
                     }
                 }
@@ -6871,58 +6886,62 @@
             "rows": [
                 {
                     "route": "BLANKSAILING_Gemini Cooperation",
-                    "current_index": 1.0,
-                    "previous_index": 0.0,
-                    "weekly_change": null
+                    "current_index": 0.0,
+                    "previous_index": 1.0,
+                    "weekly_change": {
+                        "value": "-1",
+                        "percentage": "-100.00%",
+                        "color_class": "text-blue-500"
+                    }
                 },
                 {
                     "route": "BLANKSAILING_MSC",
-                    "current_index": 4.0,
-                    "previous_index": 5.0,
+                    "current_index": 3.0,
+                    "previous_index": 4.0,
                     "weekly_change": {
                         "value": "-1",
-                        "percentage": "-20.00%",
+                        "percentage": "-25.00%",
                         "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "BLANKSAILING_OCEAN Alliance",
-                    "current_index": 7.0,
-                    "previous_index": 10.0,
+                    "current_index": 8.0,
+                    "previous_index": 7.0,
                     "weekly_change": {
-                        "value": "-3",
-                        "percentage": "-30.00%",
-                        "color_class": "text-blue-500"
+                        "value": "1",
+                        "percentage": "14.29%",
+                        "color_class": "text-red-500"
                     }
                 },
                 {
                     "route": "BLANKSAILING_Premier Alliance",
-                    "current_index": 11.0,
-                    "previous_index": 13.0,
+                    "current_index": 12.0,
+                    "previous_index": 11.0,
                     "weekly_change": {
-                        "value": "-2",
-                        "percentage": "-15.38%",
-                        "color_class": "text-blue-500"
+                        "value": "1",
+                        "percentage": "9.09%",
+                        "color_class": "text-red-500"
                     }
                 },
                 {
                     "route": "BLANKSAILING_Others/Independent",
                     "current_index": 7.0,
-                    "previous_index": 6.0,
+                    "previous_index": 7.0,
                     "weekly_change": {
-                        "value": "1",
-                        "percentage": "16.67%",
-                        "color_class": "text-red-500"
+                        "value": "0",
+                        "percentage": "0.00%",
+                        "color_class": "text-gray-700"
                     }
                 },
                 {
                     "route": "BLANKSAILING_Total",
                     "current_index": 6.0,
-                    "previous_index": 7.0,
+                    "previous_index": 6.0,
                     "weekly_change": {
-                        "value": "-1",
-                        "percentage": "-14.29%",
-                        "color_class": "text-blue-500"
+                        "value": "0",
+                        "percentage": "0.00%",
+                        "color_class": "text-gray-700"
                     }
                 }
             ]
@@ -7077,41 +7096,41 @@
             "rows": [
                 {
                     "route": "XSI_동아시아 → 북유럽",
-                    "current_index": 2770.0,
+                    "current_index": 2757.0,
                     "previous_index": 2989.0,
                     "weekly_change": {
-                        "value": "-219.0",
-                        "percentage": "-7.91%",
+                        "value": "-232.0",
+                        "percentage": "-8.41%",
                         "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "XSI_북유럽 → 동아시아",
-                    "current_index": 202.0,
+                    "current_index": 201.0,
                     "previous_index": 213.0,
                     "weekly_change": {
-                        "value": "-11.0",
-                        "percentage": "-5.45%",
+                        "value": "-12.0",
+                        "percentage": "-5.97%",
                         "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "XSI_동아시아 → 미주서안",
-                    "current_index": 1783.0,
+                    "current_index": 1777.0,
                     "previous_index": 1826.0,
                     "weekly_change": {
-                        "value": "-43.0",
-                        "percentage": "-2.41%",
+                        "value": "-49.0",
+                        "percentage": "-2.76%",
                         "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "XSI_미주서안 → 동아시아",
-                    "current_index": 651.0,
+                    "current_index": 655.0,
                     "previous_index": 634.0,
                     "weekly_change": {
-                        "value": "17.0",
-                        "percentage": "2.61%",
+                        "value": "21.0",
+                        "percentage": "3.21%",
                         "color_class": "text-red-500"
                     }
                 },
@@ -7127,32 +7146,32 @@
                 },
                 {
                     "route": "XSI_북유럽 → 미주동안",
-                    "current_index": 1923.0,
+                    "current_index": 1901.0,
                     "previous_index": 1916.0,
                     "weekly_change": {
-                        "value": "7.0",
-                        "percentage": "0.36%",
-                        "color_class": "text-red-500"
+                        "value": "-15.0",
+                        "percentage": "-0.79%",
+                        "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "XSI_미주동안 → 북유럽",
-                    "current_index": 617.0,
+                    "current_index": 615.0,
                     "previous_index": 630.0,
                     "weekly_change": {
-                        "value": "-13.0",
-                        "percentage": "-2.11%",
+                        "value": "-15.0",
+                        "percentage": "-2.44%",
                         "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "XSI_북유럽 → 남미동안",
-                    "current_index": 606.0,
+                    "current_index": 609.0,
                     "previous_index": 607.0,
                     "weekly_change": {
-                        "value": "-1.0",
-                        "percentage": "-0.17%",
-                        "color_class": "text-blue-500"
+                        "value": "2.0",
+                        "percentage": "0.33%",
+                        "color_class": "text-red-500"
                     }
                 }
             ]
@@ -7167,12 +7186,12 @@
             "rows": [
                 {
                     "route": "MBCI_종합지수",
-                    "current_index": 1514.0,
+                    "current_index": 1372.0,
                     "previous_index": 1514.0,
                     "weekly_change": {
-                        "value": "0.0",
-                        "percentage": "0.00%",
-                        "color_class": "text-gray-700"
+                        "value": "-142.0",
+                        "percentage": "-10.35%",
+                        "color_class": "text-blue-500"
                     }
                 }
             ]
