@@ -837,23 +837,6 @@
         ],
         "SCFI": [
             {
-                "date": "2024-08-30",
-                "SCFI_Composite_Index": 3098,
-                "SCFI_US_West_Coast": 5955,
-                "SCFI_US_East_Coast": 8546,
-                "SCFI_North_Europe": 4400,
-                "SCFI_Mediterranean": 4523,
-                "SCFI_Southeast_Asia": 544,
-                "SCFI_Middle_East": 1969,
-                "SCFI_Australia_New_Zealand": 2072,
-                "SCFI_South_America": 7562,
-                "SCFI_Japan_West_Coast": 293,
-                "SCFI_Japan_East_Coast": 299,
-                "SCFI_Korea": 162,
-                "SCFI_East_West_Africa": 5004,
-                "SCFI_South_Africa": 4836
-            },
-            {
                 "date": "2024-09-06",
                 "SCFI_Composite_Index": 2963,
                 "SCFI_US_West_Coast": 6140,
@@ -2409,6 +2392,10 @@
             {
                 "date": "2025-08-15",
                 "IACI_Composite_Index": 652
+            },
+            {
+                "date": "2025-08-31",
+                "IACI_Composite_Index": 594
             }
         ],
         "BLANKSAILING": [
@@ -3527,17 +3514,6 @@
             }
         ],
         "XSI": [
-            {
-                "date": "2024-08-30",
-                "XSI_East_Asia_North_Europe": 7476,
-                "XSI_North_Europe_East_Asia": 487,
-                "XSI_East_Asia_US_West_Coast": 6586,
-                "XSI_US_West_Coast_East_Asia": 659,
-                "XSI_East_Asia_South_America_East_Coast": 7900,
-                "XSI_North_Europe_US_East_Coast": 1788,
-                "XSI_US_East_Coast_North_Europe": 554,
-                "XSI_North_Europe_South_America_East_Coast": 524
-            },
             {
                 "date": "2024-09-02",
                 "XSI_East_Asia_North_Europe": 6933,
@@ -6257,10 +6233,6 @@
             }
         ],
         "MBCI": [
-            {
-                "date": "2024-08-30",
-                "MBCI_Value": 1195
-            },
             {
                 "date": "2024-09-06",
                 "MBCI_Value": 1176
