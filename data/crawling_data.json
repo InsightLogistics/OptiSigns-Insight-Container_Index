@@ -855,40 +855,6 @@
         "SCFI": [
             {
                 "date": "2024-09-06",
-                "SCFI_Composite_Index": 3098,
-                "SCFI_US_West_Coast": 5955,
-                "SCFI_US_East_Coast": 8546,
-                "SCFI_North_Europe": 4400,
-                "SCFI_Mediterranean": 4523,
-                "SCFI_Southeast_Asia": 544,
-                "SCFI_Middle_East": 1969,
-                "SCFI_Australia_New_Zealand": 2072,
-                "SCFI_South_America": 7562,
-                "SCFI_Japan_West_Coast": 293,
-                "SCFI_Japan_East_Coast": 299,
-                "SCFI_Korea": 162,
-                "SCFI_East_West_Africa": 5004,
-                "SCFI_South_Africa": 4836
-            },
-            {
-                "date": "2024-09-13",
-                "SCFI_Composite_Index": 2963,
-                "SCFI_US_West_Coast": 6140,
-                "SCFI_US_East_Coast": 8439,
-                "SCFI_North_Europe": 3876,
-                "SCFI_Mediterranean": 4083,
-                "SCFI_Southeast_Asia": 497,
-                "SCFI_Middle_East": 1756,
-                "SCFI_Australia_New_Zealand": 2235,
-                "SCFI_South_America": 7698,
-                "SCFI_Japan_West_Coast": 293,
-                "SCFI_Japan_East_Coast": 299,
-                "SCFI_Korea": 161,
-                "SCFI_East_West_Africa": 4873,
-                "SCFI_South_Africa": 4754
-            },
-            {
-                "date": "2024-09-20",
                 "SCFI_Composite_Index": 2727,
                 "SCFI_US_West_Coast": 5605,
                 "SCFI_US_East_Coast": 7511,
@@ -905,7 +871,7 @@
                 "SCFI_South_Africa": 4626
             },
             {
-                "date": "2024-09-27",
+                "date": "2024-09-13",
                 "SCFI_Composite_Index": 2511,
                 "SCFI_US_West_Coast": 5494,
                 "SCFI_US_East_Coast": 6838,
@@ -922,7 +888,7 @@
                 "SCFI_South_Africa": 4361
             },
             {
-                "date": "2024-10-11",
+                "date": "2024-09-20",
                 "SCFI_Composite_Index": 2366,
                 "SCFI_US_West_Coast": 5341,
                 "SCFI_US_East_Coast": 6486,
@@ -939,7 +905,7 @@
                 "SCFI_South_Africa": 4361
             },
             {
-                "date": "2024-10-18",
+                "date": "2024-09-27",
                 "SCFI_Composite_Index": 2135,
                 "SCFI_US_West_Coast": 4852,
                 "SCFI_US_East_Coast": 5626,
@@ -956,7 +922,7 @@
                 "SCFI_South_Africa": 4245
             },
             {
-                "date": "2024-10-25",
+                "date": "2024-10-11",
                 "SCFI_Composite_Index": 2062,
                 "SCFI_US_West_Coast": 4730,
                 "SCFI_US_East_Coast": 5554,
@@ -973,7 +939,7 @@
                 "SCFI_South_Africa": 4204
             },
             {
-                "date": "2024-11-01",
+                "date": "2024-10-18",
                 "SCFI_Composite_Index": 2062,
                 "SCFI_US_West_Coast": 4969,
                 "SCFI_US_East_Coast": 4726,
@@ -990,7 +956,7 @@
                 "SCFI_South_Africa": 4254
             },
             {
-                "date": "2024-11-08",
+                "date": "2024-10-25",
                 "SCFI_Composite_Index": 2185,
                 "SCFI_US_West_Coast": 4783,
                 "SCFI_US_East_Coast": 5099,
@@ -1007,7 +973,7 @@
                 "SCFI_South_Africa": 4233
             },
             {
-                "date": "2024-11-15",
+                "date": "2024-11-01",
                 "SCFI_Composite_Index": 2303,
                 "SCFI_US_West_Coast": 4826,
                 "SCFI_US_East_Coast": 5258,
@@ -1024,7 +990,7 @@
                 "SCFI_South_Africa": 4296
             },
             {
-                "date": "2024-11-22",
+                "date": "2024-11-08",
                 "SCFI_Composite_Index": 2331,
                 "SCFI_US_West_Coast": 4729,
                 "SCFI_US_East_Coast": 5281,
@@ -1041,7 +1007,7 @@
                 "SCFI_South_Africa": 4149
             },
             {
-                "date": "2024-11-29",
+                "date": "2024-11-15",
                 "SCFI_Composite_Index": 2252,
                 "SCFI_US_West_Coast": 4181,
                 "SCFI_US_East_Coast": 5602,
@@ -1058,7 +1024,7 @@
                 "SCFI_South_Africa": 4012
             },
             {
-                "date": "2024-12-06",
+                "date": "2024-11-22",
                 "SCFI_Composite_Index": 2160,
                 "SCFI_US_West_Coast": 3821,
                 "SCFI_US_East_Coast": 4997,
@@ -1075,7 +1041,7 @@
                 "SCFI_South_Africa": 3868
             },
             {
-                "date": "2024-12-13",
+                "date": "2024-11-29",
                 "SCFI_Composite_Index": 2233,
                 "SCFI_US_West_Coast": 3345,
                 "SCFI_US_East_Coast": 4954,
@@ -1092,7 +1058,7 @@
                 "SCFI_South_Africa": 3776
             },
             {
-                "date": "2024-12-20",
+                "date": "2024-12-06",
                 "SCFI_Composite_Index": 2256,
                 "SCFI_US_West_Coast": 3309,
                 "SCFI_US_East_Coast": 4924,
@@ -1109,7 +1075,7 @@
                 "SCFI_South_Africa": 3648
             },
             {
-                "date": "2024-12-27",
+                "date": "2024-12-13",
                 "SCFI_Composite_Index": 2384,
                 "SCFI_US_West_Coast": 4023,
                 "SCFI_US_East_Coast": 5494,
@@ -1126,7 +1092,7 @@
                 "SCFI_South_Africa": 3579
             },
             {
-                "date": "2025-01-03",
+                "date": "2024-12-20",
                 "SCFI_Composite_Index": 2390,
                 "SCFI_US_West_Coast": 4198,
                 "SCFI_US_East_Coast": 5642,
@@ -1143,7 +1109,7 @@
                 "SCFI_South_Africa": 3511
             },
             {
-                "date": "2025-01-10",
+                "date": "2024-12-27",
                 "SCFI_Composite_Index": 2460,
                 "SCFI_US_West_Coast": 4581,
                 "SCFI_US_East_Coast": 6074,
@@ -1160,7 +1126,7 @@
                 "SCFI_South_Africa": 3466
             },
             {
-                "date": "2025-01-17",
+                "date": "2025-01-03",
                 "SCFI_Composite_Index": 2505,
                 "SCFI_US_West_Coast": 4997,
                 "SCFI_US_East_Coast": 6418,
@@ -1177,7 +1143,7 @@
                 "SCFI_South_Africa": 3507
             },
             {
-                "date": "2025-01-24",
+                "date": "2025-01-10",
                 "SCFI_Composite_Index": 2290,
                 "SCFI_US_West_Coast": 4682,
                 "SCFI_US_East_Coast": 6629,
@@ -1194,7 +1160,7 @@
                 "SCFI_South_Africa": 3405
             },
             {
-                "date": "2025-02-07",
+                "date": "2025-01-17",
                 "SCFI_Composite_Index": 2131,
                 "SCFI_US_West_Coast": 4232,
                 "SCFI_US_East_Coast": 5960,
@@ -1211,7 +1177,7 @@
                 "SCFI_South_Africa": 3219
             },
             {
-                "date": "2025-02-14",
+                "date": "2025-01-24",
                 "SCFI_Composite_Index": 2045,
                 "SCFI_US_West_Coast": 4116,
                 "SCFI_US_East_Coast": 5776,
@@ -1228,7 +1194,7 @@
                 "SCFI_South_Africa": 3146
             },
             {
-                "date": "2025-02-21",
+                "date": "2025-02-07",
                 "SCFI_Composite_Index": 1896,
                 "SCFI_US_West_Coast": 3932,
                 "SCFI_US_East_Coast": 5490,
@@ -1245,7 +1211,7 @@
                 "SCFI_South_Africa": 3011
             },
             {
-                "date": "2025-02-28",
+                "date": "2025-02-14",
                 "SCFI_Composite_Index": 1758,
                 "SCFI_US_West_Coast": 3544,
                 "SCFI_US_East_Coast": 4825,
@@ -1262,7 +1228,7 @@
                 "SCFI_South_Africa": 2867
             },
             {
-                "date": "2025-03-07",
+                "date": "2025-02-21",
                 "SCFI_Composite_Index": 1595,
                 "SCFI_US_West_Coast": 2907,
                 "SCFI_US_East_Coast": 3954,
@@ -1279,7 +1245,7 @@
                 "SCFI_South_Africa": 2753
             },
             {
-                "date": "2025-03-14",
+                "date": "2025-02-28",
                 "SCFI_Composite_Index": 1515,
                 "SCFI_US_West_Coast": 2482,
                 "SCFI_US_East_Coast": 3508,
@@ -1296,7 +1262,7 @@
                 "SCFI_South_Africa": 2526
             },
             {
-                "date": "2025-03-21",
+                "date": "2025-03-07",
                 "SCFI_Composite_Index": 1463,
                 "SCFI_US_West_Coast": 2291,
                 "SCFI_US_East_Coast": 3329,
@@ -1313,7 +1279,7 @@
                 "SCFI_South_Africa": 2294
             },
             {
-                "date": "2025-03-28",
+                "date": "2025-03-14",
                 "SCFI_Composite_Index": 1319,
                 "SCFI_US_West_Coast": 1965,
                 "SCFI_US_East_Coast": 2977,
@@ -1330,7 +1296,7 @@
                 "SCFI_South_Africa": 2207
             },
             {
-                "date": "2025-04-04",
+                "date": "2025-03-21",
                 "SCFI_Composite_Index": 1292,
                 "SCFI_US_West_Coast": 1872,
                 "SCFI_US_East_Coast": 2866,
@@ -1347,7 +1313,7 @@
                 "SCFI_South_Africa": 2123
             },
             {
-                "date": "2025-04-11",
+                "date": "2025-03-28",
                 "SCFI_Composite_Index": 1357,
                 "SCFI_US_West_Coast": 2177,
                 "SCFI_US_East_Coast": 3194,
@@ -1364,7 +1330,7 @@
                 "SCFI_South_Africa": 2172
             },
             {
-                "date": "2025-04-18",
+                "date": "2025-04-04",
                 "SCFI_Composite_Index": 1392,
                 "SCFI_US_West_Coast": 2313,
                 "SCFI_US_East_Coast": 3306,
@@ -1381,7 +1347,7 @@
                 "SCFI_South_Africa": 2192
             },
             {
-                "date": "2025-04-25",
+                "date": "2025-04-11",
                 "SCFI_Composite_Index": 1395,
                 "SCFI_US_West_Coast": 2202,
                 "SCFI_US_East_Coast": 3226,
@@ -1398,7 +1364,7 @@
                 "SCFI_South_Africa": 2151
             },
             {
-                "date": "2025-04-30",
+                "date": "2025-04-18",
                 "SCFI_Composite_Index": 1371,
                 "SCFI_US_West_Coast": 2103,
                 "SCFI_US_East_Coast": 3251,
@@ -1415,7 +1381,7 @@
                 "SCFI_South_Africa": 2076
             },
             {
-                "date": "2025-05-09",
+                "date": "2025-04-25",
                 "SCFI_Composite_Index": 1348,
                 "SCFI_US_West_Coast": 2141,
                 "SCFI_US_East_Coast": 3257,
@@ -1432,7 +1398,7 @@
                 "SCFI_South_Africa": 2043
             },
             {
-                "date": "2025-05-16",
+                "date": "2025-04-30",
                 "SCFI_Composite_Index": 1341,
                 "SCFI_US_West_Coast": 2272,
                 "SCFI_US_East_Coast": 3283,
@@ -1449,7 +1415,7 @@
                 "SCFI_South_Africa": 2026
             },
             {
-                "date": "2025-05-23",
+                "date": "2025-05-09",
                 "SCFI_Composite_Index": 1345,
                 "SCFI_US_West_Coast": 2347,
                 "SCFI_US_East_Coast": 3335,
@@ -1466,7 +1432,7 @@
                 "SCFI_South_Africa": 1975
             },
             {
-                "date": "2025-05-30",
+                "date": "2025-05-16",
                 "SCFI_Composite_Index": 1479,
                 "SCFI_US_West_Coast": 3091,
                 "SCFI_US_East_Coast": 4069,
@@ -1483,7 +1449,7 @@
                 "SCFI_South_Africa": 1970
             },
             {
-                "date": "2025-06-05",
+                "date": "2025-05-23",
                 "SCFI_Composite_Index": 1586,
                 "SCFI_US_West_Coast": 3275,
                 "SCFI_US_East_Coast": 4284,
@@ -1500,7 +1466,7 @@
                 "SCFI_South_Africa": 1991
             },
             {
-                "date": "2025-06-13",
+                "date": "2025-05-30",
                 "SCFI_Composite_Index": 2073,
                 "SCFI_US_West_Coast": 5172,
                 "SCFI_US_East_Coast": 6243,
@@ -1517,7 +1483,7 @@
                 "SCFI_South_Africa": 2242
             },
             {
-                "date": "2025-06-20",
+                "date": "2025-06-05",
                 "SCFI_Composite_Index": 2240,
                 "SCFI_US_West_Coast": 5606,
                 "SCFI_US_East_Coast": 6939,
@@ -1534,7 +1500,7 @@
                 "SCFI_South_Africa": 2301
             },
             {
-                "date": "2025-06-27",
+                "date": "2025-06-13",
                 "SCFI_Composite_Index": 2088,
                 "SCFI_US_West_Coast": 4120,
                 "SCFI_US_East_Coast": 6745,
@@ -1551,7 +1517,7 @@
                 "SCFI_South_Africa": 2397
             },
             {
-                "date": "2025-07-04",
+                "date": "2025-06-20",
                 "SCFI_Composite_Index": 1870,
                 "SCFI_US_West_Coast": 2772,
                 "SCFI_US_East_Coast": 5352,
@@ -1568,7 +1534,7 @@
                 "SCFI_South_Africa": 2476
             },
             {
-                "date": "2025-07-11",
+                "date": "2025-06-27",
                 "SCFI_Composite_Index": 1862,
                 "SCFI_US_West_Coast": 2578,
                 "SCFI_US_East_Coast": 4717,
@@ -1585,7 +1551,7 @@
                 "SCFI_South_Africa": 2641
             },
             {
-                "date": "2025-07-18",
+                "date": "2025-07-04",
                 "SCFI_Composite_Index": 1763,
                 "SCFI_US_West_Coast": 2089,
                 "SCFI_US_East_Coast": 4124,
@@ -1602,7 +1568,7 @@
                 "SCFI_South_Africa": 2653
             },
             {
-                "date": "2025-07-25",
+                "date": "2025-07-11",
                 "SCFI_Composite_Index": 1733,
                 "SCFI_US_West_Coast": 2194,
                 "SCFI_US_East_Coast": 4172,
@@ -1619,7 +1585,7 @@
                 "SCFI_South_Africa": 2828
             },
             {
-                "date": "2025-08-01",
+                "date": "2025-07-18",
                 "SCFI_Composite_Index": 1647,
                 "SCFI_US_West_Coast": 2142,
                 "SCFI_US_East_Coast": 3612,
@@ -1636,7 +1602,7 @@
                 "SCFI_South_Africa": 2851
             },
             {
-                "date": "2025-08-08",
+                "date": "2025-07-25",
                 "SCFI_Composite_Index": 1593,
                 "SCFI_US_West_Coast": 2067,
                 "SCFI_US_East_Coast": 3378,
@@ -1653,7 +1619,7 @@
                 "SCFI_South_Africa": 2961
             },
             {
-                "date": "2025-08-14",
+                "date": "2025-08-01",
                 "SCFI_Composite_Index": 1551,
                 "SCFI_US_West_Coast": 2021,
                 "SCFI_US_East_Coast": 3126,
@@ -1670,7 +1636,7 @@
                 "SCFI_South_Africa": 3022
             },
             {
-                "date": "2025-08-22",
+                "date": "2025-08-08",
                 "SCFI_Composite_Index": 1490,
                 "SCFI_US_West_Coast": 1823,
                 "SCFI_US_East_Coast": 2792,
@@ -1687,21 +1653,55 @@
                 "SCFI_South_Africa": 2996
             },
             {
-                "date": "2025-08-29",
-                "SCFI_Composite_Index": 1490,
-                "SCFI_US_West_Coast": 1823,
-                "SCFI_US_East_Coast": 2792,
-                "SCFI_North_Europe": 1961,
-                "SCFI_Mediterranean": 2318,
-                "SCFI_Southeast_Asia": 409,
-                "SCFI_Middle_East": 1233,
-                "SCFI_Australia_New_Zealand": 1197,
-                "SCFI_South_America": 3811,
+                "date": "2025-08-14",
+                "SCFI_Composite_Index": 1460,
+                "SCFI_US_West_Coast": 1759,
+                "SCFI_US_East_Coast": 2719,
+                "SCFI_North_Europe": 1820,
+                "SCFI_Mediterranean": 2279,
+                "SCFI_Southeast_Asia": 406,
+                "SCFI_Middle_East": 1381,
+                "SCFI_Australia_New_Zealand": 1239,
+                "SCFI_South_America": 3340,
                 "SCFI_Japan_West_Coast": 313,
-                "SCFI_Japan_East_Coast": 322,
-                "SCFI_Korea": 136,
-                "SCFI_East_West_Africa": 4153,
+                "SCFI_Japan_East_Coast": 324,
+                "SCFI_Korea": 138,
+                "SCFI_East_West_Africa": 4074,
+                "SCFI_South_Africa": 3008
+            },
+            {
+                "date": "2025-08-22",
+                "SCFI_Composite_Index": 1415,
+                "SCFI_US_West_Coast": 1644,
+                "SCFI_US_East_Coast": 2613,
+                "SCFI_North_Europe": 1668,
+                "SCFI_Mediterranean": 2225,
+                "SCFI_Southeast_Asia": 398,
+                "SCFI_Middle_East": 1479,
+                "SCFI_Australia_New_Zealand": 1267,
+                "SCFI_South_America": 3107,
+                "SCFI_Japan_West_Coast": 314,
+                "SCFI_Japan_East_Coast": 323,
+                "SCFI_Korea": 139,
+                "SCFI_East_West_Africa": 4015,
                 "SCFI_South_Africa": 2996
+            },
+            {
+                "date": "2025-08-29",
+                "SCFI_Composite_Index": 1445,
+                "SCFI_US_West_Coast": 1923,
+                "SCFI_US_East_Coast": 2866,
+                "SCFI_North_Europe": 1481,
+                "SCFI_Mediterranean": 2145,
+                "SCFI_Southeast_Asia": 419,
+                "SCFI_Middle_East": 1579,
+                "SCFI_Australia_New_Zealand": 1325,
+                "SCFI_South_America": 3027,
+                "SCFI_Japan_West_Coast": 314,
+                "SCFI_Japan_East_Coast": 323,
+                "SCFI_Korea": 139,
+                "SCFI_East_West_Africa": 3977,
+                "SCFI_South_Africa": 2984
             }
         ],
         "WCI": [
@@ -6249,39 +6249,39 @@
         "MBCI": [
             {
                 "date": "2024-09-06",
-                "MBCI_Value": 1176
-            },
-            {
-                "date": "2024-09-13",
-                "MBCI_Value": 1164
-            },
-            {
-                "date": "2024-09-20",
                 "MBCI_Value": 1147
             },
             {
-                "date": "2024-09-27",
+                "date": "2024-09-13",
                 "MBCI_Value": 1094
             },
             {
-                "date": "2024-10-04",
+                "date": "2024-09-20",
                 "MBCI_Value": 1095
             },
             {
-                "date": "2024-10-11",
+                "date": "2024-09-27",
                 "MBCI_Value": 1097
             },
             {
-                "date": "2024-10-18",
+                "date": "2024-10-04",
                 "MBCI_Value": 1149
             },
             {
-                "date": "2024-10-25",
+                "date": "2024-10-11",
                 "MBCI_Value": 1160
             },
             {
-                "date": "2024-11-01",
+                "date": "2024-10-18",
                 "MBCI_Value": 1183
+            },
+            {
+                "date": "2024-10-25",
+                "MBCI_Value": 1169
+            },
+            {
+                "date": "2024-11-01",
+                "MBCI_Value": 1195
             },
             {
                 "date": "2024-11-08",
@@ -6289,7 +6289,7 @@
             },
             {
                 "date": "2024-11-15",
-                "MBCI_Value": 1195
+                "MBCI_Value": 1168
             },
             {
                 "date": "2024-11-22",
@@ -6297,163 +6297,163 @@
             },
             {
                 "date": "2024-11-29",
-                "MBCI_Value": 1168
-            },
-            {
-                "date": "2024-12-06",
-                "MBCI_Value": 1169
-            },
-            {
-                "date": "2024-12-13",
                 "MBCI_Value": 1159
             },
             {
-                "date": "2024-12-20",
+                "date": "2024-12-06",
                 "MBCI_Value": 1146
             },
             {
-                "date": "2024-12-27",
+                "date": "2024-12-13",
                 "MBCI_Value": 1235
             },
             {
-                "date": "2025-01-03",
+                "date": "2024-12-20",
                 "MBCI_Value": 1234
             },
             {
-                "date": "2025-01-10",
+                "date": "2024-12-27",
                 "MBCI_Value": 1203
             },
             {
-                "date": "2025-01-17",
+                "date": "2025-01-03",
                 "MBCI_Value": 1263
             },
             {
-                "date": "2025-01-24",
+                "date": "2025-01-10",
                 "MBCI_Value": 1294
             },
             {
-                "date": "2025-01-31",
+                "date": "2025-01-17",
                 "MBCI_Value": 1269
             },
             {
-                "date": "2025-02-07",
+                "date": "2025-01-24",
                 "MBCI_Value": 1247
             },
             {
-                "date": "2025-02-14",
+                "date": "2025-01-31",
                 "MBCI_Value": 1265
             },
             {
-                "date": "2025-02-21",
+                "date": "2025-02-07",
                 "MBCI_Value": 1277
             },
             {
-                "date": "2025-02-28",
+                "date": "2025-02-14",
                 "MBCI_Value": 1298
             },
             {
-                "date": "2025-03-07",
+                "date": "2025-02-21",
                 "MBCI_Value": 1323
             },
             {
-                "date": "2025-03-14",
+                "date": "2025-02-28",
                 "MBCI_Value": 1328
             },
             {
-                "date": "2025-03-21",
+                "date": "2025-03-07",
                 "MBCI_Value": 1319
             },
             {
-                "date": "2025-03-28",
+                "date": "2025-03-14",
                 "MBCI_Value": 1335
             },
             {
-                "date": "2025-04-04",
+                "date": "2025-03-21",
                 "MBCI_Value": 1345
             },
             {
-                "date": "2025-04-11",
+                "date": "2025-03-28",
                 "MBCI_Value": 1346
             },
             {
-                "date": "2025-04-18",
+                "date": "2025-04-04",
                 "MBCI_Value": 1333
             },
             {
-                "date": "2025-04-25",
+                "date": "2025-04-11",
                 "MBCI_Value": 1348
             },
             {
-                "date": "2025-05-02",
+                "date": "2025-04-18",
                 "MBCI_Value": 1391
             },
             {
+                "date": "2025-04-25",
+                "MBCI_Value": 1424
+            },
+            {
+                "date": "2025-05-02",
+                "MBCI_Value": 1424
+            },
+            {
                 "date": "2025-05-09",
-                "MBCI_Value": 1424
-            },
-            {
-                "date": "2025-05-16",
-                "MBCI_Value": 1424
-            },
-            {
-                "date": "2025-05-23",
                 "MBCI_Value": 1407
             },
             {
-                "date": "2025-05-30",
+                "date": "2025-05-16",
                 "MBCI_Value": 1373
             },
             {
-                "date": "2025-06-06",
+                "date": "2025-05-23",
                 "MBCI_Value": 1342
             },
             {
-                "date": "2025-06-13",
+                "date": "2025-05-30",
                 "MBCI_Value": 1337
             },
             {
-                "date": "2025-06-20",
+                "date": "2025-06-06",
                 "MBCI_Value": 1319
             },
             {
-                "date": "2025-06-27",
+                "date": "2025-06-13",
                 "MBCI_Value": 1307
             },
             {
-                "date": "2025-07-04",
+                "date": "2025-06-20",
                 "MBCI_Value": 1289
             },
             {
-                "date": "2025-07-11",
+                "date": "2025-06-27",
                 "MBCI_Value": 1294
             },
             {
-                "date": "2025-07-18",
+                "date": "2025-07-04",
                 "MBCI_Value": 1352
             },
             {
-                "date": "2025-07-25",
+                "date": "2025-07-11",
                 "MBCI_Value": 1379
             },
             {
-                "date": "2025-08-01",
+                "date": "2025-07-18",
                 "MBCI_Value": 1415
             },
             {
-                "date": "2025-08-08",
+                "date": "2025-07-25",
                 "MBCI_Value": 1420
             },
             {
-                "date": "2025-08-15",
+                "date": "2025-08-01",
                 "MBCI_Value": 1472
             },
             {
-                "date": "2025-08-22",
+                "date": "2025-08-08",
                 "MBCI_Value": 1556
             },
             {
-                "date": "2025-08-29",
+                "date": "2025-08-15",
                 "MBCI_Value": 1514
+            },
+            {
+                "date": "2025-08-22",
+                "MBCI_Value": 1514
+            },
+            {
+                "date": "2025-08-29",
+                "MBCI_Value": 1372
             }
         ]
     },
