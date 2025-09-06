@@ -2745,7 +2745,7 @@
                 "date": "2024-09-27",
                 "FBX_Composite_Index": 4564,
                 "FBX_China_EA_US_West_Coast": 6816,
-                "FBX_US_West_Coast_China_EA": 471,
+                "FBX_US_West_Coast_China_EA": 511,
                 "FBX_China_EA_US_East_Coast": 8693,
                 "FBX_US_East_Coast_China_EA": 443,
                 "FBX_China_EA_North_Europe": 5074,
@@ -3508,6 +3508,22 @@
                 "FBX_North_Europe_US_East_Coast": 2269,
                 "FBX_Europe_South_America_East_Coast": 756,
                 "FBX_Europe_South_America_West_Coast": 3181
+            },
+            {
+                "date": "2025-09-05",
+                "FBX_Composite_Index": 2004,
+                "FBX_China_EA_US_West_Coast": 2163,
+                "FBX_US_West_Coast_China_EA": 347,
+                "FBX_China_EA_US_East_Coast": 3241,
+                "FBX_US_East_Coast_China_EA": 476,
+                "FBX_China_EA_North_Europe": 2540,
+                "FBX_North_Europe_China_EA": 419,
+                "FBX_China_EA_Mediterranean": 2949,
+                "FBX_Mediterranean_China_EA": 665,
+                "FBX_US_East_Coast_North_Europe": 431,
+                "FBX_North_Europe_US_East_Coast": 2269,
+                "FBX_Europe_South_America_East_Coast": 778,
+                "FBX_Europe_South_America_West_Coast": 3142
             }
         ],
         "XSI": [
@@ -6216,6 +6232,17 @@
                 "XSI_North_Europe_US_East_Coast": 1832,
                 "XSI_US_East_Coast_North_Europe": 607,
                 "XSI_North_Europe_South_America_East_Coast": 588
+            },
+            {
+                "date": "2025-09-05",
+                "XSI_East_Asia_North_Europe": 2405,
+                "XSI_North_Europe_East_Asia": 175,
+                "XSI_East_Asia_US_West_Coast": 2148,
+                "XSI_US_West_Coast_East_Asia": 683,
+                "XSI_East_Asia_South_America_East_Coast": 3316,
+                "XSI_North_Europe_US_East_Coast": 1833,
+                "XSI_US_East_Coast_North_Europe": 610,
+                "XSI_North_Europe_South_America_East_Coast": 593
             }
         ],
         "MBCI": [
