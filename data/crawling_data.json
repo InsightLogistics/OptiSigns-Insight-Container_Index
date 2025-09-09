@@ -6233,6 +6233,17 @@
                 "XSI_North_Europe_US_East_Coast": 1833,
                 "XSI_US_East_Coast_North_Europe": 610,
                 "XSI_North_Europe_South_America_East_Coast": 593
+            },
+            {
+                "date": "2025-09-08",
+                "XSI_East_Asia_North_Europe": 2356,
+                "XSI_North_Europe_East_Asia": 172,
+                "XSI_East_Asia_US_West_Coast": 2194,
+                "XSI_US_West_Coast_East_Asia": 681,
+                "XSI_East_Asia_South_America_East_Coast": 3394,
+                "XSI_North_Europe_US_East_Coast": 1842,
+                "XSI_US_East_Coast_North_Europe": 619,
+                "XSI_North_Europe_South_America_East_Coast": 598
             }
         ],
         "MBCI": [
