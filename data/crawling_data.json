@@ -2316,6 +2316,18 @@
                 "WCI_Shanghai_New_York": 3677,
                 "WCI_New_York_Rotterdam": 839,
                 "WCI_Rotterdam_New_York": 1950
+            },
+            {
+                "date": "2025-09-11",
+                "WCI_Composite_Index": 2044,
+                "WCI_Shanghai_Rotterdam": 2143,
+                "WCI_Rotterdam_Shanghai": 455,
+                "WCI_Shanghai_Genoa": 2342,
+                "WCI_Shanghai_to_Los_Angeles": 2678,
+                "WCI_Los_Angeles_to_Shanghai": 723,
+                "WCI_Shanghai_New_York": 3743,
+                "WCI_New_York_Rotterdam": 856,
+                "WCI_Rotterdam_New_York": 1938
             }
         ],
         "IACI": [
