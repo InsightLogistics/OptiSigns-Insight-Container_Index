@@ -6245,6 +6245,17 @@
                 "XSI_North_Europe_US_East_Coast": 1850,
                 "XSI_US_East_Coast_North_Europe": 616,
                 "XSI_North_Europe_South_America_East_Coast": 585
+            },
+            {
+                "date": "2025-09-15",
+                "XSI_East_Asia_North_Europe": 2083,
+                "XSI_North_Europe_East_Asia": 182,
+                "XSI_East_Asia_US_West_Coast": 2487,
+                "XSI_US_West_Coast_East_Asia": 681,
+                "XSI_East_Asia_South_America_East_Coast": 3627,
+                "XSI_North_Europe_US_East_Coast": 1835,
+                "XSI_US_East_Coast_North_Europe": 598,
+                "XSI_North_Europe_South_America_East_Coast": 586
             }
         ],
         "MBCI": [
@@ -7099,11 +7110,11 @@
             "rows": [
                 {
                     "route": "XSI_동아시아 → 북유럽",
-                    "current_index": 2210.0,
+                    "current_index": 2083.0,
                     "previous_index": 2356.0,
                     "weekly_change": {
-                        "value": "-146.0",
-                        "percentage": "-6.61%",
+                        "value": "-273.0",
+                        "percentage": "-13.11%",
                         "color_class": "text-blue-500"
                     }
                 },
@@ -7119,11 +7130,11 @@
                 },
                 {
                     "route": "XSI_동아시아 → 미주서안",
-                    "current_index": 2261.0,
+                    "current_index": 2487.0,
                     "previous_index": 2194.0,
                     "weekly_change": {
-                        "value": "67.0",
-                        "percentage": "2.96%",
+                        "value": "293.0",
+                        "percentage": "11.78%",
                         "color_class": "text-red-500"
                     }
                 },
@@ -7139,41 +7150,41 @@
                 },
                 {
                     "route": "XSI_동아시아 → 남미동안",
-                    "current_index": 3618.0,
+                    "current_index": 3627.0,
                     "previous_index": 3394.0,
                     "weekly_change": {
-                        "value": "224.0",
-                        "percentage": "6.19%",
+                        "value": "233.0",
+                        "percentage": "6.42%",
                         "color_class": "text-red-500"
                     }
                 },
                 {
                     "route": "XSI_북유럽 → 미주동안",
-                    "current_index": 1850.0,
+                    "current_index": 1835.0,
                     "previous_index": 1842.0,
                     "weekly_change": {
-                        "value": "8.0",
-                        "percentage": "0.43%",
-                        "color_class": "text-red-500"
+                        "value": "-7.0",
+                        "percentage": "-0.38%",
+                        "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "XSI_미주동안 → 북유럽",
-                    "current_index": 616.0,
+                    "current_index": 598.0,
                     "previous_index": 619.0,
                     "weekly_change": {
-                        "value": "-3.0",
-                        "percentage": "-0.49%",
+                        "value": "-21.0",
+                        "percentage": "-3.51%",
                         "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "XSI_북유럽 → 남미동안",
-                    "current_index": 585.0,
+                    "current_index": 586.0,
                     "previous_index": 598.0,
                     "weekly_change": {
-                        "value": "-13.0",
-                        "percentage": "-2.22%",
+                        "value": "-12.0",
+                        "percentage": "-2.05%",
                         "color_class": "text-blue-500"
                     }
                 }
