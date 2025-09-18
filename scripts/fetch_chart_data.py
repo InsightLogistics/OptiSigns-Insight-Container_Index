@@ -101,16 +101,6 @@ SECTION_COLUMN_MAPPINGS = {
             "로테르담 → 뉴욕": "Rotterdam_New_York",
         }
     },
-    "IACI": {
-        "section_name_cell": (0, 43), # AR1
-        "date_col_idx": 43, # AR열
-        "data_start_col_idx": 44, # AS열
-        "data_end_col_idx": 44, # AS열
-        "sub_headers_map": { # Headers from row 2 (index 1)
-            "date": "Date", # AR2
-            "종합지수": "Composite_Index" # AS2
-        }
-    },
     "BLANKSAILING": {
         "section_name_cell": (0, 46), # AU1
         "date_col_idx": 46, # AU열
@@ -213,14 +203,6 @@ TABLE_DATA_CELL_MAPPINGS = {
             "상하이 → 로스엔젤레스", "로스엔젤레스 → 상하이", "상하이 → 뉴욕",
             "뉴욕 → 로테르담", "로테르담 → 뉴욕"
         ]
-    },
-    "IACI": {
-        "current_date_cell": (26, 0), # A27
-        "current_index_cols_range": (1, 1), # B27
-        "previous_date_cell": (27, 0), # A28
-        "previous_index_cols_range": (1, 1), # B28
-        "weekly_change_row_idx": 28, # B29
-        "route_names": ["종합지수"]
     },
     "BLANKSAILING": {
         "current_date_cell": (32, 0), # A33
