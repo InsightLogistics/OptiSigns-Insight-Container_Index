@@ -1,7 +1,6 @@
 let KCCIChart;
 let SCFIChart;
 let WCIChart;
-let IACIChart;
 let blankSailingChart;
 let FBXChart;
 let XSIChart;
@@ -438,9 +437,6 @@ document.addEventListener('DOMContentLoaded', () => {
             "뉴욕 → 로테르담": "WCI_New_York_Rotterdam",
             "로테르담 → 뉴욕": "WCI_Rotterdam_New_York",
         },
-        IACI: {
-            "종합지수": "IACI_Composite_Index"
-        },
         BLANKSAILING: {
             "Gemini Cooperation": "BLANKSAILING_Gemini_Cooperation",
             "MSC": "BLANKSAILING_MSC",
@@ -831,19 +827,6 @@ const createDatasetsFromTableRows = (indexType, chartData, tableRows) => {
                 currentIndexDate: formatDateForTable(WCILatestDate),
                 previousIndexDate: formatDateForTable(WCIPrevDate)
             });
-
-
-            // IACI 차트 및 테이블
-            const IACIData = chartDataBySection.IACI || [];
-            const { latestDate: IACILatestDate, previousDate: IACIPrevDate } = getLatestAndPreviousDates(IACIData);
-            const IACITableRows = tableDataBySection.IACI ? tableDataBySection.IACI.rows : [];
-            const IACIDatasets = createDatasetsFromTableRows('IACI', IACIData, IACITableRows);
-            IACIChart = setupChart('IACIChart', 'line', IACIDatasets, {}, false);
-            renderTable('IACITableContainer', tableDataBySection.IACI.headers, IACITableRows, {
-                currentIndexDate: formatDateForTable(IACILatestDate),
-                previousIndexDate: formatDateForTable(IACIPrevDate)
-            });
-
 
             const blankSailingRawData = chartDataBySection.BLANKSAILING || [];
             const { aggregatedData: aggregatedBlankSailingData, monthlyLabels: blankSailingChartDates } = aggregateDataByMonth(blankSailingRawData, 12);
