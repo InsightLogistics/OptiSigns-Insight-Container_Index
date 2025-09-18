@@ -2342,104 +2342,6 @@
                 "WCI_Rotterdam_New_York": 1926
             }
         ],
-        "IACI": [
-            {
-                "date": "2024-09-30",
-                "IACI_Composite_Index": 894
-            },
-            {
-                "date": "2024-10-15",
-                "IACI_Composite_Index": 668
-            },
-            {
-                "date": "2024-10-31",
-                "IACI_Composite_Index": 589
-            },
-            {
-                "date": "2024-11-15",
-                "IACI_Composite_Index": 500
-            },
-            {
-                "date": "2024-11-30",
-                "IACI_Composite_Index": 573
-            },
-            {
-                "date": "2024-12-15",
-                "IACI_Composite_Index": 829
-            },
-            {
-                "date": "2024-12-31",
-                "IACI_Composite_Index": 864
-            },
-            {
-                "date": "2025-01-15",
-                "IACI_Composite_Index": 934
-            },
-            {
-                "date": "2025-01-31",
-                "IACI_Composite_Index": 879
-            },
-            {
-                "date": "2025-02-15",
-                "IACI_Composite_Index": 828
-            },
-            {
-                "date": "2025-02-28",
-                "IACI_Composite_Index": 726
-            },
-            {
-                "date": "2025-03-15",
-                "IACI_Composite_Index": 667
-            },
-            {
-                "date": "2025-03-31",
-                "IACI_Composite_Index": 615
-            },
-            {
-                "date": "2025-04-15",
-                "IACI_Composite_Index": 604
-            },
-            {
-                "date": "2025-04-30",
-                "IACI_Composite_Index": 601
-            },
-            {
-                "date": "2025-05-15",
-                "IACI_Composite_Index": 668
-            },
-            {
-                "date": "2025-05-31",
-                "IACI_Composite_Index": 706
-            },
-            {
-                "date": "2025-06-15",
-                "IACI_Composite_Index": 657
-            },
-            {
-                "date": "2025-06-30",
-                "IACI_Composite_Index": 655
-            },
-            {
-                "date": "2025-07-15",
-                "IACI_Composite_Index": 707
-            },
-            {
-                "date": "2025-07-31",
-                "IACI_Composite_Index": 813
-            },
-            {
-                "date": "2025-08-15",
-                "IACI_Composite_Index": 592
-            },
-            {
-                "date": "2025-08-31",
-                "IACI_Composite_Index": 582
-            },
-            {
-                "date": "2025-09-15",
-                "IACI_Composite_Index": 612
-            }
-        ],
         "BLANKSAILING": [
             {
                 "date": "2025-02-14",
@@ -6882,26 +6784,6 @@
                         "value": "-12.0",
                         "percentage": "-0.62%",
                         "color_class": "text-blue-500"
-                    }
-                }
-            ]
-        },
-        "IACI": {
-            "headers": [
-                "Route",
-                "Current Index",
-                "Previous Index",
-                "Weekly Change"
-            ],
-            "rows": [
-                {
-                    "route": "IACI_종합지수",
-                    "current_index": 1153.0,
-                    "previous_index": 584.0,
-                    "weekly_change": {
-                        "value": "569.0",
-                        "percentage": "49.39%",
-                        "color_class": "text-red-500"
                     }
                 }
             ]
