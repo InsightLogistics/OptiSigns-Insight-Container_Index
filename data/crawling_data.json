@@ -1706,18 +1706,6 @@
         ],
         "WCI": [
             {
-                "date": "2024-09-19",
-                "WCI_Composite_Index": 3970,
-                "WCI_Shanghai_Rotterdam": 4682,
-                "WCI_Rotterdam_Shanghai": 603,
-                "WCI_Shanghai_Genoa": 4928,
-                "WCI_Shanghai_to_Los_Angeles": 5580,
-                "WCI_Los_Angeles_to_Shanghai": 717,
-                "WCI_Shanghai_New_York": 6364,
-                "WCI_New_York_Rotterdam": 713,
-                "WCI_Rotterdam_New_York": 2056
-            },
-            {
                 "date": "2024-09-26",
                 "WCI_Composite_Index": 3691,
                 "WCI_Shanghai_Rotterdam": 4157,
@@ -3458,17 +3446,6 @@
             }
         ],
         "XSI": [
-            {
-                "date": "2024-09-19",
-                "XSI_East_Asia_North_Europe": 5195,
-                "XSI_North_Europe_East_Asia": 469,
-                "XSI_East_Asia_US_West_Coast": 6126,
-                "XSI_US_West_Coast_East_Asia": 648,
-                "XSI_East_Asia_South_America_East_Coast": 7698,
-                "XSI_North_Europe_US_East_Coast": 2339,
-                "XSI_US_East_Coast_North_Europe": 560,
-                "XSI_North_Europe_South_America_East_Coast": 597
-            },
             {
                 "date": "2024-09-20",
                 "XSI_East_Asia_North_Europe": 5050,
@@ -7013,10 +6990,10 @@
                 {
                     "route": "XSI_동아시아 → 북유럽",
                     "current_index": 1991.0,
-                    "previous_index": 2242.0,
+                    "previous_index": 2210.0,
                     "weekly_change": {
-                        "value": "-251.0",
-                        "percentage": "-12.61%",
+                        "value": "-219.0",
+                        "percentage": "-11.00%",
                         "color_class": "text-blue-500"
                     }
                 },
@@ -7033,30 +7010,30 @@
                 {
                     "route": "XSI_동아시아 → 미주서안",
                     "current_index": 2248.0,
-                    "previous_index": 2273.0,
+                    "previous_index": 2261.0,
                     "weekly_change": {
-                        "value": "-25.0",
-                        "percentage": "-1.11%",
+                        "value": "-13.0",
+                        "percentage": "-0.58%",
                         "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "XSI_미주서안 → 동아시아",
                     "current_index": 679.0,
-                    "previous_index": 680.0,
+                    "previous_index": 681.0,
                     "weekly_change": {
-                        "value": "-1.0",
-                        "percentage": "-0.15%",
+                        "value": "-2.0",
+                        "percentage": "-0.29%",
                         "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "XSI_동아시아 → 남미동안",
                     "current_index": 3519.0,
-                    "previous_index": 3619.0,
+                    "previous_index": 3618.0,
                     "weekly_change": {
-                        "value": "-100.0",
-                        "percentage": "-2.84%",
+                        "value": "-99.0",
+                        "percentage": "-2.81%",
                         "color_class": "text-blue-500"
                     }
                 },
@@ -7073,10 +7050,10 @@
                 {
                     "route": "XSI_미주동안 → 북유럽",
                     "current_index": 601.0,
-                    "previous_index": 619.0,
+                    "previous_index": 616.0,
                     "weekly_change": {
-                        "value": "-18.0",
-                        "percentage": "-3.00%",
+                        "value": "-15.0",
+                        "percentage": "-2.50%",
                         "color_class": "text-blue-500"
                     }
                 },
