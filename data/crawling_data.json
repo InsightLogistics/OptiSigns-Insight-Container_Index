@@ -6174,136 +6174,147 @@
                 "XSI_North_Europe_US_East_Coast": 1770,
                 "XSI_US_East_Coast_North_Europe": 606,
                 "XSI_North_Europe_South_America_East_Coast": 586
+            },
+            {
+                "date": "2025-09-25",
+                "XSI_East_Asia_North_Europe": 1874,
+                "XSI_North_Europe_East_Asia": 180,
+                "XSI_East_Asia_US_West_Coast": 1844,
+                "XSI_US_West_Coast_East_Asia": 674,
+                "XSI_East_Asia_South_America_East_Coast": 2993,
+                "XSI_North_Europe_US_East_Coast": 1770,
+                "XSI_US_East_Coast_North_Europe": 606,
+                "XSI_North_Europe_South_America_East_Coast": 583
             }
         ],
         "MBCI": [
             {
                 "date": "2024-09-27",
-                "MBCI_Value": 1095
+                "MBCI_Value": 1094
             },
             {
                 "date": "2024-10-04",
-                "MBCI_Value": 1097
+                "MBCI_Value": 1095
             },
             {
                 "date": "2024-10-11",
-                "MBCI_Value": 1149
+                "MBCI_Value": 1097
             },
             {
                 "date": "2024-10-18",
-                "MBCI_Value": 1160
+                "MBCI_Value": 1149
             },
             {
                 "date": "2024-10-25",
-                "MBCI_Value": 1183
+                "MBCI_Value": 1160
             },
             {
                 "date": "2024-11-01",
-                "MBCI_Value": 1169
+                "MBCI_Value": 1183
             },
             {
                 "date": "2024-11-08",
-                "MBCI_Value": 1195
+                "MBCI_Value": 1169
             },
             {
                 "date": "2024-11-15",
-                "MBCI_Value": 1169
+                "MBCI_Value": 1195
             },
             {
                 "date": "2024-11-22",
-                "MBCI_Value": 1168
-            },
-            {
-                "date": "2024-11-29",
                 "MBCI_Value": 1169
             },
             {
+                "date": "2024-11-29",
+                "MBCI_Value": 1168
+            },
+            {
                 "date": "2024-12-06",
-                "MBCI_Value": 1159
+                "MBCI_Value": 1169
             },
             {
                 "date": "2024-12-13",
-                "MBCI_Value": 1146
+                "MBCI_Value": 1159
             },
             {
                 "date": "2024-12-20",
-                "MBCI_Value": 1235
+                "MBCI_Value": 1146
             },
             {
                 "date": "2024-12-27",
-                "MBCI_Value": 1234
+                "MBCI_Value": 1235
             },
             {
                 "date": "2025-01-03",
-                "MBCI_Value": 1203
+                "MBCI_Value": 1234
             },
             {
                 "date": "2025-01-10",
-                "MBCI_Value": 1263
+                "MBCI_Value": 1203
             },
             {
                 "date": "2025-01-17",
-                "MBCI_Value": 1294
+                "MBCI_Value": 1263
             },
             {
                 "date": "2025-01-24",
-                "MBCI_Value": 1269
+                "MBCI_Value": 1294
             },
             {
                 "date": "2025-01-31",
-                "MBCI_Value": 1247
+                "MBCI_Value": 1269
             },
             {
                 "date": "2025-02-07",
-                "MBCI_Value": 1265
+                "MBCI_Value": 1247
             },
             {
                 "date": "2025-02-14",
-                "MBCI_Value": 1277
+                "MBCI_Value": 1265
             },
             {
                 "date": "2025-02-21",
-                "MBCI_Value": 1298
+                "MBCI_Value": 1277
             },
             {
                 "date": "2025-02-28",
-                "MBCI_Value": 1323
+                "MBCI_Value": 1298
             },
             {
                 "date": "2025-03-07",
-                "MBCI_Value": 1328
+                "MBCI_Value": 1323
             },
             {
                 "date": "2025-03-14",
-                "MBCI_Value": 1319
+                "MBCI_Value": 1328
             },
             {
                 "date": "2025-03-21",
-                "MBCI_Value": 1335
+                "MBCI_Value": 1319
             },
             {
                 "date": "2025-03-28",
-                "MBCI_Value": 1345
+                "MBCI_Value": 1335
             },
             {
                 "date": "2025-04-04",
-                "MBCI_Value": 1346
+                "MBCI_Value": 1345
             },
             {
                 "date": "2025-04-11",
-                "MBCI_Value": 1333
+                "MBCI_Value": 1346
             },
             {
                 "date": "2025-04-18",
-                "MBCI_Value": 1348
+                "MBCI_Value": 1333
             },
             {
                 "date": "2025-04-25",
-                "MBCI_Value": 1391
+                "MBCI_Value": 1348
             },
             {
                 "date": "2025-05-02",
-                "MBCI_Value": 1424
+                "MBCI_Value": 1391
             },
             {
                 "date": "2025-05-09",
@@ -6311,63 +6322,63 @@
             },
             {
                 "date": "2025-05-16",
-                "MBCI_Value": 1407
+                "MBCI_Value": 1424
             },
             {
                 "date": "2025-05-23",
-                "MBCI_Value": 1373
+                "MBCI_Value": 1407
             },
             {
                 "date": "2025-05-30",
-                "MBCI_Value": 1342
+                "MBCI_Value": 1373
             },
             {
                 "date": "2025-06-06",
-                "MBCI_Value": 1337
+                "MBCI_Value": 1342
             },
             {
                 "date": "2025-06-13",
-                "MBCI_Value": 1319
+                "MBCI_Value": 1337
             },
             {
                 "date": "2025-06-20",
-                "MBCI_Value": 1307
+                "MBCI_Value": 1319
             },
             {
                 "date": "2025-06-27",
-                "MBCI_Value": 1289
+                "MBCI_Value": 1307
             },
             {
                 "date": "2025-07-04",
-                "MBCI_Value": 1294
+                "MBCI_Value": 1289
             },
             {
                 "date": "2025-07-11",
-                "MBCI_Value": 1352
+                "MBCI_Value": 1294
             },
             {
                 "date": "2025-07-18",
-                "MBCI_Value": 1379
+                "MBCI_Value": 1352
             },
             {
                 "date": "2025-07-25",
-                "MBCI_Value": 1415
+                "MBCI_Value": 1379
             },
             {
                 "date": "2025-08-01",
-                "MBCI_Value": 1420
+                "MBCI_Value": 1415
             },
             {
                 "date": "2025-08-08",
-                "MBCI_Value": 1472
+                "MBCI_Value": 1420
             },
             {
                 "date": "2025-08-15",
-                "MBCI_Value": 1556
+                "MBCI_Value": 1472
             },
             {
                 "date": "2025-08-22",
-                "MBCI_Value": 1514
+                "MBCI_Value": 1556
             },
             {
                 "date": "2025-08-29",
@@ -6375,14 +6386,18 @@
             },
             {
                 "date": "2025-09-05",
-                "MBCI_Value": 1372
+                "MBCI_Value": 1514
             },
             {
                 "date": "2025-09-12",
-                "MBCI_Value": 1305
+                "MBCI_Value": 1372
             },
             {
                 "date": "2025-09-19",
+                "MBCI_Value": 1305
+            },
+            {
+                "date": "2025-09-26",
                 "MBCI_Value": 1390
             }
         ]
@@ -7008,11 +7023,11 @@
             "rows": [
                 {
                     "route": "XSI_동아시아 → 북유럽",
-                    "current_index": 1916.0,
+                    "current_index": 1874.0,
                     "previous_index": 1991.0,
                     "weekly_change": {
-                        "value": "-75.0",
-                        "percentage": "-3.91%",
+                        "value": "-117.0",
+                        "percentage": "-6.24%",
                         "color_class": "text-blue-500"
                     }
                 },
@@ -7028,11 +7043,11 @@
                 },
                 {
                     "route": "XSI_동아시아 → 미주서안",
-                    "current_index": 1871.0,
+                    "current_index": 1844.0,
                     "previous_index": 2248.0,
                     "weekly_change": {
-                        "value": "-377.0",
-                        "percentage": "-20.15%",
+                        "value": "-404.0",
+                        "percentage": "-21.91%",
                         "color_class": "text-blue-500"
                     }
                 },
@@ -7048,11 +7063,11 @@
                 },
                 {
                     "route": "XSI_동아시아 → 남미동안",
-                    "current_index": 3001.0,
+                    "current_index": 2993.0,
                     "previous_index": 3519.0,
                     "weekly_change": {
-                        "value": "-518.0",
-                        "percentage": "-17.26%",
+                        "value": "-526.0",
+                        "percentage": "-17.57%",
                         "color_class": "text-blue-500"
                     }
                 },
@@ -7078,11 +7093,11 @@
                 },
                 {
                     "route": "XSI_북유럽 → 남미동안",
-                    "current_index": 586.0,
+                    "current_index": 583.0,
                     "previous_index": 587.0,
                     "weekly_change": {
-                        "value": "-1.0",
-                        "percentage": "-0.17%",
+                        "value": "-4.0",
+                        "percentage": "-0.69%",
                         "color_class": "text-blue-500"
                     }
                 }
@@ -7098,11 +7113,11 @@
             "rows": [
                 {
                     "route": "MBCI_종합지수",
-                    "current_index": 1447.0,
-                    "previous_index": 1390.0,
+                    "current_index": 1459.0,
+                    "previous_index": 1447.0,
                     "weekly_change": {
-                        "value": "57.0",
-                        "percentage": "3.94%",
+                        "value": "12.0",
+                        "percentage": "0.82%",
                         "color_class": "text-red-500"
                     }
                 }
