@@ -2328,6 +2328,18 @@
                 "WCI_Shanghai_New_York": 3278,
                 "WCI_New_York_Rotterdam": 842,
                 "WCI_Rotterdam_New_York": 1819
+            },
+            {
+                "date": "2025-10-02",
+                "WCI_Composite_Index": 1669,
+                "WCI_Shanghai_Rotterdam": 1613,
+                "WCI_Rotterdam_Shanghai": 459,
+                "WCI_Shanghai_Genoa": 1804,
+                "WCI_Shanghai_to_Los_Angeles": 2196,
+                "WCI_Los_Angeles_to_Shanghai": 712,
+                "WCI_Shanghai_New_York": 3200,
+                "WCI_New_York_Rotterdam": 847,
+                "WCI_Rotterdam_New_York": 1796
             }
         ],
         "BLANKSAILING": [
@@ -6173,6 +6185,17 @@
                 "XSI_North_Europe_US_East_Coast": 1760,
                 "XSI_US_East_Coast_North_Europe": 598,
                 "XSI_North_Europe_South_America_East_Coast": 574
+            },
+            {
+                "date": "2025-10-01",
+                "XSI_East_Asia_North_Europe": 1657,
+                "XSI_North_Europe_East_Asia": 154,
+                "XSI_East_Asia_US_West_Coast": 1619,
+                "XSI_US_West_Coast_East_Asia": 670,
+                "XSI_East_Asia_South_America_East_Coast": 2716,
+                "XSI_North_Europe_US_East_Coast": 1665,
+                "XSI_US_East_Coast_North_Europe": 542,
+                "XSI_North_Europe_South_America_East_Coast": 570
             }
         ],
         "MBCI": [
@@ -6697,91 +6720,91 @@
             "rows": [
                 {
                     "route": "WCI_종합지수",
-                    "current_index": 1761.0,
-                    "previous_index": 1913.0,
+                    "current_index": 1669.0,
+                    "previous_index": 1761.0,
                     "weekly_change": {
-                        "value": "-152.0",
-                        "percentage": "-8.63%",
+                        "value": "-92.0",
+                        "percentage": "-5.51%",
                         "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "WCI_상하이 → 로테르담",
-                    "current_index": 1735.0,
-                    "previous_index": 1910.0,
+                    "current_index": 1613.0,
+                    "previous_index": 1735.0,
                     "weekly_change": {
-                        "value": "-175.0",
-                        "percentage": "-10.09%",
+                        "value": "-122.0",
+                        "percentage": "-7.56%",
                         "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "WCI_로테르담 → 상하이",
-                    "current_index": 461.0,
-                    "previous_index": 457.0,
+                    "current_index": 459.0,
+                    "previous_index": 461.0,
                     "weekly_change": {
-                        "value": "4.0",
-                        "percentage": "0.87%",
-                        "color_class": "text-red-500"
+                        "value": "-2.0",
+                        "percentage": "-0.44%",
+                        "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "WCI_상하이 → 제노바",
-                    "current_index": 1990.0,
-                    "previous_index": 2131.0,
+                    "current_index": 1804.0,
+                    "previous_index": 1990.0,
                     "weekly_change": {
-                        "value": "-141.0",
-                        "percentage": "-7.09%",
+                        "value": "-186.0",
+                        "percentage": "-10.31%",
                         "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "WCI_상하이 → 로스엔젤레스",
-                    "current_index": 2311.0,
-                    "previous_index": 2561.0,
+                    "current_index": 2196.0,
+                    "previous_index": 2311.0,
                     "weekly_change": {
-                        "value": "-250.0",
-                        "percentage": "-10.82%",
+                        "value": "-115.0",
+                        "percentage": "-5.24%",
                         "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "WCI_로스엔젤레스 → 상하이",
-                    "current_index": 716.0,
-                    "previous_index": 721.0,
+                    "current_index": 712.0,
+                    "previous_index": 716.0,
                     "weekly_change": {
-                        "value": "-5.0",
-                        "percentage": "-0.70%",
+                        "value": "-4.0",
+                        "percentage": "-0.56%",
                         "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "WCI_상하이 → 뉴욕",
-                    "current_index": 3278.0,
-                    "previous_index": 3571.0,
+                    "current_index": 3200.0,
+                    "previous_index": 3278.0,
                     "weekly_change": {
-                        "value": "-293.0",
-                        "percentage": "-8.94%",
+                        "value": "-78.0",
+                        "percentage": "-2.44%",
                         "color_class": "text-blue-500"
                     }
                 },
                 {
                     "route": "WCI_뉴욕 → 로테르담",
-                    "current_index": 842.0,
-                    "previous_index": 847.0,
+                    "current_index": 847.0,
+                    "previous_index": 842.0,
                     "weekly_change": {
-                        "value": "-5.0",
-                        "percentage": "-0.59%",
-                        "color_class": "text-blue-500"
+                        "value": "5.0",
+                        "percentage": "0.59%",
+                        "color_class": "text-red-500"
                     }
                 },
                 {
                     "route": "WCI_로테르담 → 뉴욕",
-                    "current_index": 1819.0,
-                    "previous_index": 1926.0,
+                    "current_index": 1796.0,
+                    "previous_index": 1819.0,
                     "weekly_change": {
-                        "value": "-107.0",
-                        "percentage": "-5.88%",
+                        "value": "-23.0",
+                        "percentage": "-1.28%",
                         "color_class": "text-blue-500"
                     }
                 }
@@ -7007,80 +7030,80 @@
             "rows": [
                 {
                     "route": "XSI_동아시아 → 북유럽",
-                    "current_index": 1773.0,
+                    "current_index": 1657.0,
                     "previous_index": null,
                     "weekly_change": {
-                        "value": "1773.0",
+                        "value": "1657.0",
                         "percentage": "100.00%",
                         "color_class": "text-red-500"
                     }
                 },
                 {
                     "route": "XSI_북유럽 → 동아시아",
-                    "current_index": 178.0,
+                    "current_index": 154.0,
                     "previous_index": null,
                     "weekly_change": {
-                        "value": "178.0",
+                        "value": "154.0",
                         "percentage": "100.00%",
                         "color_class": "text-red-500"
                     }
                 },
                 {
                     "route": "XSI_동아시아 → 미주서안",
-                    "current_index": 1753.0,
+                    "current_index": 1619.0,
                     "previous_index": null,
                     "weekly_change": {
-                        "value": "1753.0",
+                        "value": "1619.0",
                         "percentage": "100.00%",
                         "color_class": "text-red-500"
                     }
                 },
                 {
                     "route": "XSI_미주서안 → 동아시아",
-                    "current_index": 679.0,
+                    "current_index": 670.0,
                     "previous_index": null,
                     "weekly_change": {
-                        "value": "679.0",
+                        "value": "670.0",
                         "percentage": "100.00%",
                         "color_class": "text-red-500"
                     }
                 },
                 {
                     "route": "XSI_동아시아 → 남미동안",
-                    "current_index": 2720.0,
+                    "current_index": 2716.0,
                     "previous_index": null,
                     "weekly_change": {
-                        "value": "2720.0",
+                        "value": "2716.0",
                         "percentage": "100.00%",
                         "color_class": "text-red-500"
                     }
                 },
                 {
                     "route": "XSI_북유럽 → 미주동안",
-                    "current_index": 1760.0,
+                    "current_index": 1665.0,
                     "previous_index": null,
                     "weekly_change": {
-                        "value": "1760.0",
+                        "value": "1665.0",
                         "percentage": "100.00%",
                         "color_class": "text-red-500"
                     }
                 },
                 {
                     "route": "XSI_미주동안 → 북유럽",
-                    "current_index": 598.0,
+                    "current_index": 542.0,
                     "previous_index": null,
                     "weekly_change": {
-                        "value": "598.0",
+                        "value": "542.0",
                         "percentage": "100.00%",
                         "color_class": "text-red-500"
                     }
                 },
                 {
                     "route": "XSI_북유럽 → 남미동안",
-                    "current_index": 574.0,
+                    "current_index": 570.0,
                     "previous_index": null,
                     "weekly_change": {
-                        "value": "574.0",
+                        "value": "570.0",
                         "percentage": "100.00%",
                         "color_class": "text-red-500"
                     }
