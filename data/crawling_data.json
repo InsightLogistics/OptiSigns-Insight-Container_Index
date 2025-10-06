@@ -2352,6 +2352,18 @@
                 "WCI_Shanghai_New_York": 3200,
                 "WCI_New_York_Rotterdam": 847,
                 "WCI_Rotterdam_New_York": 1796
+            },
+            {
+                "date": "2025-10-02",
+                "WCI_Composite_Index": 1669,
+                "WCI_Shanghai_Rotterdam": 1613,
+                "WCI_Rotterdam_Shanghai": 459,
+                "WCI_Shanghai_Genoa": 1804,
+                "WCI_Shanghai_to_Los_Angeles": 2196,
+                "WCI_Los_Angeles_to_Shanghai": 712,
+                "WCI_Shanghai_New_York": 3200,
+                "WCI_New_York_Rotterdam": 847,
+                "WCI_Rotterdam_New_York": 1796
             }
         ],
         "BLANKSAILING": [
