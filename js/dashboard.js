@@ -851,58 +851,63 @@ const createDatasetsFromTableRows = (indexType, chartData, tableRows) => {
                 previousIndexDate: formatDateForTable(WCIPrevDate)
             });
 
+            // Blank Sailing 차트 및 테이블
             const blankSailingRawData = chartDataBySection.BLANKSAILING || [];
-            const { aggregatedData: aggregatedBlankSailingData, monthlyLabels: blankSailingChartDates } = aggregateDataByMonth(blankSailingRawData, 12);
             
-            // Blank Sailing 테이블의 날짜는 원본 데이터의 마지막 날짜를 사용합니다.
+            // 1. 데이터를 날짜순으로 정렬하고 최신 12개만 선택합니다.
+            const sortedData = [...blankSailingRawData].sort((a, b) => new Date(a.date) - new Date(b.date));
+            const recent12Entries = sortedData.slice(-12);
+            
+            // Blank Sailing 테이블의 날짜는 원본 데이터의 마지막 날짜를 사용합니다. (이 부분은 동일)
             const { latestDate: BSLatestDate, previousDate: BSPrevDate } = getLatestAndPreviousDates(blankSailingRawData);
             const blankSailingTableRows = tableDataBySection.BLANKSAILING ? tableDataBySection.BLANKSAILING.rows : [];
             
+            // 2. 월별 집계 데이터(aggregated...) 대신 최신 12개(recent12Entries) 데이터로 차트를 만듭니다.
             const blankSailingDatasets = [
                 {
                     label: "Gemini Cooperation",
-                    data: aggregatedBlankSailingData.map(item => ({ x: item.date, y: item.BLANKSAILING_Gemini_Cooperation })),
+                    data: recent12Entries.map(item => ({ x: item.date, y: item.BLANKSAILING_Gemini_Cooperation })),
                     backgroundColor: getNextColor(),
                     borderColor: 'rgba(0, 0, 0, 0)',
                     borderWidth: 0
                 },
                 {
                     label: "MSC",
-                    data: aggregatedBlankSailingData.map(item => ({ x: item.date, y: item.BLANKSAILING_MSC })),
+                    data: recent12Entries.map(item => ({ x: item.date, y: item.BLANKSAILING_MSC })),
                     backgroundColor: getNextColor(),
                     borderColor: 'rgba(0, 0, 0, 0)',
                     borderWidth: 0
                 },
                 {
                     label: "OCEAN Alliance",
-                    data: aggregatedBlankSailingData.map(item => ({ x: item.date, y: item.BLANKSAILING_OCEAN_Alliance })),
+                    data: recent12Entries.map(item => ({ x: item.date, y: item.BLANKSAILING_OCEAN_Alliance })),
                     backgroundColor: getNextColor(),
-                    borderColor: 'rgba(0, 0, 0, 0)', // <--- 이 부분 추가
-                    borderWidth: 0 // <--- 이 부분 수정
+                    borderColor: 'rgba(0, 0, 0, 0)',
+                    borderWidth: 0
                 },
                 {
                     label: "Premier Alliance",
-                    data: aggregatedBlankSailingData.map(item => ({ x: item.date, y: item.BLANKSAILING_Premier_Alliance })),
+                    data: recent12Entries.map(item => ({ x: item.date, y: item.BLANKSAILING_Premier_Alliance })),
                     backgroundColor: getNextColor(),
                     borderColor: 'rgba(0, 0, 0, 0)',
                     borderWidth: 0
                 },
                 {
                     label: "Others/Independent",
-                    data: aggregatedBlankSailingData.map(item => ({ x: item.date, y: item.BLANKSAILING_Others_Independent })),
+                    data: recent12Entries.map(item => ({ x: item.date, y: item.BLANKSAILING_Others_Independent })),
                     backgroundColor: getNextColor(),
                     borderColor: 'rgba(0, 0, 0, 0)',
                     borderWidth: 0
                 },
                 {
                     label: "Total",
-                    data: aggregatedBlankSailingData.map(item => ({ x: item.date, y: item.BLANKSAILING_Total })),
+                    data: recent12Entries.map(item => ({ x: item.date, y: item.BLANKSAILING_Total })),
                     backgroundColor: getNextColor(),
                     borderColor: 'rgba(0, 0, 0, 0)',
                     borderWidth: 0
                 }
             ].filter(dataset => dataset.data.some(point => point.y !== null && point.y !== undefined));
-
+            
             blankSailingChart = setupChart(
                 'blankSailingChart', 'bar',
                 blankSailingDatasets,
@@ -912,21 +917,23 @@ const createDatasetsFromTableRows = (indexType, chartData, tableRows) => {
                             stacked: true,
                             type: 'time',
                             time: {
-                                unit: 'month',
-                                displayFormats: { month: 'MM/01/yy' }, // 형식 변경
+                                // 3. X축 단위를 'month'에서 'week'으로 변경하고, 표시 형식을 수정합니다.
+                                unit: 'week',
+                                displayFormats: { week: 'MM/dd' }, // "10/10" 와 같이 표시됩니다.
                                 tooltipFormat: 'M/d/yyyy'
                             },
-                            title: { display: false } // X축 타이틀 제거
+                            title: { display: false }
                         },
                         y: {
                             stacked: true,
                             beginAtZero: true,
-                            title: { display: false } // Y축 타이틀 제거
+                            title: { display: false }
                         }
                     }
                 },
-                true
+                false // isAggregated를 false로 변경 (필수는 아니지만 의미상 명확)
             );
+            
             renderTable('BLANKSAILINGTableContainer', tableDataBySection.BLANKSAILING.headers, blankSailingTableRows, {
                 currentIndexDate: formatDateForTable(BSLatestDate),
                 previousIndexDate: formatDateForTable(BSPrevDate)
