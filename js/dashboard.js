@@ -922,7 +922,11 @@ const createDatasetsFromTableRows = (indexType, chartData, tableRows) => {
                                 // unit: 'week', // <-- 이 줄을 삭제하거나 주석 처리합니다.
                                 tooltipFormat: 'M/d/yyyy',
                                 // 데이터가 주 단위이므로, 표시 형식은 그대로 유지하는 것이 좋습니다.
-                                displayFormats: { day: 'MM/dd', week: 'MM/dd', month: 'MM/dd' }
+                                displayFormats: {
+                                    day: 'MM/dd/yy', 
+                                    week: 'MM/dd/yy', 
+                                    month: 'MM/dd/yy' 
+                                }
                             },
                             // ticks.source를 'data'로 설정하는 것이 핵심입니다.
                             ticks: {
