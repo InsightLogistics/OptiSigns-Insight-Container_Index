@@ -6555,15 +6555,23 @@
                 },
                 {
                     "route": "KCCI_일본",
-                    "current_index": null,
-                    "previous_index": null,
-                    "weekly_change": null
+                    "current_index": 217.0,
+                    "previous_index": 219.0,
+                    "weekly_change": {
+                        "value": "-2.0",
+                        "percentage": "-0.91%",
+                        "color_class": "text-blue-500"
+                    }
                 },
                 {
                     "route": "KCCI_동남아시아",
-                    "current_index": null,
-                    "previous_index": null,
-                    "weekly_change": null
+                    "current_index": 877.0,
+                    "previous_index": 880.0,
+                    "weekly_change": {
+                        "value": "-3.0",
+                        "percentage": "-0.34%",
+                        "color_class": "text-blue-500"
+                    }
                 }
             ]
         },
@@ -6697,15 +6705,23 @@
                 },
                 {
                     "route": "SCFI_동부/서부 아프리카",
-                    "current_index": null,
-                    "previous_index": null,
-                    "weekly_change": null
+                    "current_index": 3763.0,
+                    "previous_index": 3739.0,
+                    "weekly_change": {
+                        "value": "24.0",
+                        "percentage": "0.64%",
+                        "color_class": "text-red-500"
+                    }
                 },
                 {
                     "route": "SCFI_남아공",
-                    "current_index": null,
-                    "previous_index": null,
-                    "weekly_change": null
+                    "current_index": 2830.0,
+                    "previous_index": 2826.0,
+                    "weekly_change": {
+                        "value": "4.0",
+                        "percentage": "0.14%",
+                        "color_class": "text-red-500"
+                    }
                 }
             ]
         },
@@ -7009,9 +7025,13 @@
                 },
                 {
                     "route": "FBX_유럽 → 남미서안",
-                    "current_index": null,
-                    "previous_index": null,
-                    "weekly_change": null
+                    "current_index": 2684.0,
+                    "previous_index": 2764.0,
+                    "weekly_change": {
+                        "value": "-80.0",
+                        "percentage": "-2.89%",
+                        "color_class": "text-blue-500"
+                    }
                 }
             ]
         },
