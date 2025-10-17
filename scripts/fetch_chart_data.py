@@ -316,14 +316,14 @@ def fetch_and_process_data():
             actual_raw_headers_in_section_df = [raw_headers_full_charts[idx] for idx in valid_raw_column_indices]
             df_section_raw_cols.columns = actual_raw_headers_in_section_df
             
-                date_header_original = next(iter(details["sub_headers_map"]))
+            date_header_original = next(iter(details["sub_headers_map"]))
                 
-                df_section_raw_cols = df_section_raw_cols[df_section_raw_cols[date_header_original].astype(str).str.strip() != ''].copy()
+            df_section_raw_cols = df_section_raw_cols[df_section_raw_cols[date_header_original].astype(str).str.strip() != ''].copy()
                 
-                if df_section_raw_cols.empty:
-                    print(f"WARNING: No valid data rows found for section {section_key} after filtering empty dates. Skipping.")
-                    processed_chart_data_by_section[section_key] = []
-                    continue
+            if df_section_raw_cols.empty:
+                print(f"WARNING: No valid data rows found for section {section_key} after filtering empty dates. Skipping.")
+                processed_chart_data_by_section[section_key] = []
+                continue
 
             print(f"DEBUG: {section_key} - Raw columns in section DataFrame before renaming: {df_section_raw_cols.columns.tolist()}")
 
