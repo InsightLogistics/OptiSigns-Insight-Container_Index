@@ -917,10 +917,14 @@ const createDatasetsFromTableRows = (indexType, chartData, tableRows) => {
                             stacked: true,
                             type: 'time',
                             time: {
-                                // 3. X축 단위를 'month'에서 'week'으로 변경하고, 표시 형식을 수정합니다.
-                                unit: 'week',
-                                displayFormats: { week: 'MM/dd' }, // "10/10" 와 같이 표시됩니다.
-                                tooltipFormat: 'M/d/yyyy'
+                                // unit: 'week', // <-- 이 줄을 삭제하거나 주석 처리합니다.
+                                tooltipFormat: 'M/d/yyyy',
+                                // 데이터가 주 단위이므로, 표시 형식은 그대로 유지하는 것이 좋습니다.
+                                displayFormats: { day: 'MM/dd', week: 'MM/dd', month: 'MM/dd' }
+                            },
+                            // ticks.source를 'data'로 설정하는 것이 핵심입니다.
+                            ticks: {
+                                source: 'data' // X축 눈금을 데이터 기준으로 생성
                             },
                             title: { display: false }
                         },
@@ -931,7 +935,7 @@ const createDatasetsFromTableRows = (indexType, chartData, tableRows) => {
                         }
                     }
                 },
-                false // isAggregated를 false로 변경 (필수는 아니지만 의미상 명확)
+                false
             );
             
             renderTable('BLANKSAILINGTableContainer', tableDataBySection.BLANKSAILING.headers, blankSailingTableRows, {
