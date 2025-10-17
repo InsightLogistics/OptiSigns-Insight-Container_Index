@@ -561,6 +561,29 @@ const createDatasetsFromTableRows = (indexType, chartData, tableRows) => {
         return `https://placehold.co/80x80/cccccc/ffffff?text=Icon`; // Default placeholder if no match
     };
 
+    const findWeeklyPreviousDate = (chartData) => {
+    if (!chartData || chartData.length < 2) return { latestDate: null, previousDate: null };
+
+    const sortedData = [...chartData].sort((a, b) => new Date(b.date) - new Date(a.date));
+    const latestDate = new Date(sortedData[0].date);
+
+    let closestDate = null;
+    let smallestDiff = Infinity;
+
+    // 두 번째 데이터부터 순회하며 최신 날짜와 약 7일 차이 나는 데이터를 찾습니다.
+    for (let i = 1; i < sortedData.length; i++) {
+        const currentDate = new Date(sortedData[i].date);
+        const diffInDays = (latestDate - currentDate) / (1000 * 60 * 60 * 24);
+        const distanceFrom7 = Math.abs(diffInDays - 7);
+
+        if (distanceFrom7 < smallestDiff) {
+            smallestDiff = distanceFrom7;
+            closestDate = currentDate;
+        }
+    }
+    return { latestDate, previousDate: closestDate };
+};
+
     async function loadAndDisplayData() {
         let allDashboardData = {};
         try {
@@ -924,7 +947,7 @@ const createDatasetsFromTableRows = (indexType, chartData, tableRows) => {
 
             // XSI 차트 및 테이블
             const XSIData = chartDataBySection.XSI || [];
-            const { latestDate: XSILatestDate, previousDate: XSIPrevDate } = getLatestAndPreviousDates(XSIData);
+            const { latestDate: XSILatestDate, previousDate: XSIPrevDate } = findWeeklyPreviousDate(XSIData); // <-- 이렇게 수정
             const XSITableRows = tableDataBySection.XSI ? tableDataBySection.XSI.rows : [];
             const XSIDatasets = createDatasetsFromTableRows('XSI', XSIData, XSITableRows);
             XSIChart = setupChart('XSIChart', 'line', XSIDatasets, {}, false);
