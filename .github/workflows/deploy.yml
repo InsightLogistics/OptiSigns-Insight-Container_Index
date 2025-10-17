@@ -47,5 +47,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }} # Use the GitHub-provided token for deployment
           publish_dir: ./ # Publish files from the root directory of the repository
-          keep_files: true # Keep existing files in the gh-pages branch (only update changed files)
           publish_branch: gh-pages # Publish the deployed files to the 'gh-pages' branch
