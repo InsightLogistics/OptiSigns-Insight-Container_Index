@@ -249,7 +249,6 @@ TABLE_DATA_CELL_MAPPINGS = {
         "current_index_cols_range": (6, 6), # G59
         "previous_date_cell": (59, 0), # A60
         "previous_index_cols_range": (6, 6), # G60
-        "weekly_change_row_idx": 60, # G61
         "route_names": ["종합지수"]
     }
 }
@@ -316,6 +315,15 @@ def fetch_and_process_data():
             # 선택된 열의 실제 헤더 이름을 사용하여 DataFrame 열 이름 설정
             actual_raw_headers_in_section_df = [raw_headers_full_charts[idx] for idx in valid_raw_column_indices]
             df_section_raw_cols.columns = actual_raw_headers_in_section_df
+            
+            date_header_original = next(iter(details["sub_headers_map"]))
+                
+            df_section_raw_cols = df_section_raw_cols[df_section_raw_cols[date_header_original].astype(str).str.strip() != ''].copy()
+                
+            if df_section_raw_cols.empty:
+                print(f"WARNING: No valid data rows found for section {section_key} after filtering empty dates. Skipping.")
+                processed_chart_data_by_section[section_key] = []
+                continue
 
             print(f"DEBUG: {section_key} - Raw columns in section DataFrame before renaming: {df_section_raw_cols.columns.tolist()}")
 

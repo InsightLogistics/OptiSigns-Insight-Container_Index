@@ -7112,7 +7112,18 @@
                 "Previous Index",
                 "Weekly Change"
             ],
-            "rows": []
+            "rows": [
+                {
+                    "route": "MBCI_종합지수",
+                    "current_index": 1325.0,
+                    "previous_index": 1434.0,
+                    "weekly_change": {
+                        "value": "-109",
+                        "percentage": "-7.60%",
+                        "color_class": "text-blue-500"
+                    }
+                }
+            ]
         }
     },
     "weather_data": {
