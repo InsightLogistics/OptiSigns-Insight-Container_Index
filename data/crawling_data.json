@@ -2294,18 +2294,21 @@
                 "WCI_Shanghai_New_York": 3189,
                 "WCI_New_York_Rotterdam": 830,
                 "WCI_Rotterdam_New_York": 1759
+            },
+            {
+                "date": "2025-10-16",
+                "WCI_Composite_Index": 1687,
+                "WCI_Shanghai_Rotterdam": 1669,
+                "WCI_Rotterdam_Shanghai": 452,
+                "WCI_Shanghai_Genoa": 1821,
+                "WCI_Shanghai_to_Los_Angeles": 2195,
+                "WCI_Los_Angeles_to_Shanghai": 710,
+                "WCI_Shanghai_New_York": 3236,
+                "WCI_New_York_Rotterdam": 845,
+                "WCI_Rotterdam_New_York": 1797
             }
         ],
         "BLANKSAILING": [
-            {
-                "date": "2025-01-17",
-                "BLANKSAILING_Gemini_Cooperation": 8,
-                "BLANKSAILING_MSC": 5,
-                "BLANKSAILING_OCEAN_Alliance": 20,
-                "BLANKSAILING_Premier_Alliance": 30,
-                "BLANKSAILING_Others_Independent": 10,
-                "BLANKSAILING_Total": 15
-            },
             {
                 "date": "2025-01-24",
                 "BLANKSAILING_Gemini_Cooperation": 10,
@@ -2647,6 +2650,15 @@
                 "BLANKSAILING_Premier_Alliance": 9,
                 "BLANKSAILING_Others_Independent": 7,
                 "BLANKSAILING_Total": 6
+            },
+            {
+                "date": "2025-10-17",
+                "BLANKSAILING_Gemini_Cooperation": 2,
+                "BLANKSAILING_MSC": 7,
+                "BLANKSAILING_OCEAN_Alliance": 7,
+                "BLANKSAILING_Premier_Alliance": 9,
+                "BLANKSAILING_Others_Independent": 9,
+                "BLANKSAILING_Total": 7
             }
         ],
         "FBX": [
@@ -6410,6 +6422,10 @@
             {
                 "date": "2025-10-10",
                 "MBCI_Value": 1325
+            },
+            {
+                "date": "2025-10-17",
+                "MBCI_Value": 1282
             }
         ]
     },
@@ -6724,92 +6740,92 @@
             "rows": [
                 {
                     "route": "WCI_종합지수",
-                    "current_index": 1651.0,
-                    "previous_index": 1669.0,
+                    "current_index": 1687.0,
+                    "previous_index": 1651.0,
                     "weekly_change": {
-                        "value": "-18.0",
-                        "percentage": "-1.08%",
-                        "color_class": "text-blue-500"
-                    }
-                },
-                {
-                    "route": "WCI_상하이 → 로테르담",
-                    "current_index": 1577.0,
-                    "previous_index": 1613.0,
-                    "weekly_change": {
-                        "value": "-36.0",
-                        "percentage": "-2.23%",
-                        "color_class": "text-blue-500"
-                    }
-                },
-                {
-                    "route": "WCI_로테르담 → 상하이",
-                    "current_index": 449.0,
-                    "previous_index": 459.0,
-                    "weekly_change": {
-                        "value": "-10.0",
-                        "percentage": "-2.18%",
-                        "color_class": "text-blue-500"
-                    }
-                },
-                {
-                    "route": "WCI_상하이 → 제노바",
-                    "current_index": 1793.0,
-                    "previous_index": 1804.0,
-                    "weekly_change": {
-                        "value": "-11.0",
-                        "percentage": "-0.61%",
-                        "color_class": "text-blue-500"
-                    }
-                },
-                {
-                    "route": "WCI_상하이 → 로스엔젤레스",
-                    "current_index": 2176.0,
-                    "previous_index": 2196.0,
-                    "weekly_change": {
-                        "value": "-20.0",
-                        "percentage": "-0.91%",
-                        "color_class": "text-blue-500"
-                    }
-                },
-                {
-                    "route": "WCI_로스엔젤레스 → 상하이",
-                    "current_index": 716.0,
-                    "previous_index": 712.0,
-                    "weekly_change": {
-                        "value": "4.0",
-                        "percentage": "0.56%",
+                        "value": "36.0",
+                        "percentage": "2.18%",
                         "color_class": "text-red-500"
                     }
                 },
                 {
-                    "route": "WCI_상하이 → 뉴욕",
-                    "current_index": 3189.0,
-                    "previous_index": 3200.0,
+                    "route": "WCI_상하이 → 로테르담",
+                    "current_index": 1669.0,
+                    "previous_index": 1577.0,
                     "weekly_change": {
-                        "value": "-11.0",
-                        "percentage": "-0.34%",
+                        "value": "92.0",
+                        "percentage": "5.83%",
+                        "color_class": "text-red-500"
+                    }
+                },
+                {
+                    "route": "WCI_로테르담 → 상하이",
+                    "current_index": 452.0,
+                    "previous_index": 449.0,
+                    "weekly_change": {
+                        "value": "3.0",
+                        "percentage": "0.67%",
+                        "color_class": "text-red-500"
+                    }
+                },
+                {
+                    "route": "WCI_상하이 → 제노바",
+                    "current_index": 1821.0,
+                    "previous_index": 1793.0,
+                    "weekly_change": {
+                        "value": "28.0",
+                        "percentage": "1.56%",
+                        "color_class": "text-red-500"
+                    }
+                },
+                {
+                    "route": "WCI_상하이 → 로스엔젤레스",
+                    "current_index": 2195.0,
+                    "previous_index": 2176.0,
+                    "weekly_change": {
+                        "value": "19.0",
+                        "percentage": "0.87%",
+                        "color_class": "text-red-500"
+                    }
+                },
+                {
+                    "route": "WCI_로스엔젤레스 → 상하이",
+                    "current_index": 710.0,
+                    "previous_index": 716.0,
+                    "weekly_change": {
+                        "value": "-6.0",
+                        "percentage": "-0.84%",
                         "color_class": "text-blue-500"
+                    }
+                },
+                {
+                    "route": "WCI_상하이 → 뉴욕",
+                    "current_index": 3236.0,
+                    "previous_index": 3189.0,
+                    "weekly_change": {
+                        "value": "47.0",
+                        "percentage": "1.47%",
+                        "color_class": "text-red-500"
                     }
                 },
                 {
                     "route": "WCI_뉴욕 → 로테르담",
-                    "current_index": 830.0,
-                    "previous_index": 847.0,
+                    "current_index": 845.0,
+                    "previous_index": 830.0,
                     "weekly_change": {
-                        "value": "-17.0",
-                        "percentage": "-2.01%",
-                        "color_class": "text-blue-500"
+                        "value": "15.0",
+                        "percentage": "1.81%",
+                        "color_class": "text-red-500"
                     }
                 },
                 {
                     "route": "WCI_로테르담 → 뉴욕",
-                    "current_index": 1759.0,
-                    "previous_index": 1796.0,
+                    "current_index": 1797.0,
+                    "previous_index": 1759.0,
                     "weekly_change": {
-                        "value": "-37.0",
-                        "percentage": "-2.06%",
-                        "color_class": "text-blue-500"
+                        "value": "38.0",
+                        "percentage": "2.16%",
+                        "color_class": "text-red-500"
                     }
                 }
             ]
@@ -6824,28 +6840,38 @@
             "rows": [
                 {
                     "route": "BLANKSAILING_Gemini Cooperation",
-                    "current_index": 1.0,
-                    "previous_index": 4.0,
+                    "current_index": 2.0,
+                    "previous_index": 1.0,
                     "weekly_change": {
-                        "value": "-3",
-                        "percentage": "-75.00%",
-                        "color_class": "text-blue-500"
+                        "value": "1",
+                        "percentage": "100.00%",
+                        "color_class": "text-red-500"
                     }
                 },
                 {
                     "route": "BLANKSAILING_MSC",
-                    "current_index": 6.0,
-                    "previous_index": 7.0,
+                    "current_index": 7.0,
+                    "previous_index": 6.0,
                     "weekly_change": {
-                        "value": "-1",
-                        "percentage": "-14.29%",
-                        "color_class": "text-blue-500"
+                        "value": "1",
+                        "percentage": "16.67%",
+                        "color_class": "text-red-500"
                     }
                 },
                 {
                     "route": "BLANKSAILING_OCEAN Alliance",
-                    "current_index": 11.0,
+                    "current_index": 7.0,
                     "previous_index": 11.0,
+                    "weekly_change": {
+                        "value": "-4",
+                        "percentage": "-36.36%",
+                        "color_class": "text-blue-500"
+                    }
+                },
+                {
+                    "route": "BLANKSAILING_Premier Alliance",
+                    "current_index": 9.0,
+                    "previous_index": 9.0,
                     "weekly_change": {
                         "value": "0",
                         "percentage": "0.00%",
@@ -6853,33 +6879,23 @@
                     }
                 },
                 {
-                    "route": "BLANKSAILING_Premier Alliance",
+                    "route": "BLANKSAILING_Others/Independent",
                     "current_index": 9.0,
-                    "previous_index": 8.0,
+                    "previous_index": 7.0,
                     "weekly_change": {
-                        "value": "1",
-                        "percentage": "12.50%",
+                        "value": "2",
+                        "percentage": "28.57%",
                         "color_class": "text-red-500"
                     }
                 },
                 {
-                    "route": "BLANKSAILING_Others/Independent",
-                    "current_index": 7.0,
-                    "previous_index": 8.0,
-                    "weekly_change": {
-                        "value": "-1",
-                        "percentage": "-12.50%",
-                        "color_class": "text-blue-500"
-                    }
-                },
-                {
                     "route": "BLANKSAILING_Total",
-                    "current_index": 6.0,
-                    "previous_index": 8.0,
+                    "current_index": 7.0,
+                    "previous_index": 6.0,
                     "weekly_change": {
-                        "value": "-2",
-                        "percentage": "-25.00%",
-                        "color_class": "text-blue-500"
+                        "value": "1",
+                        "percentage": "16.67%",
+                        "color_class": "text-red-500"
                     }
                 }
             ]
@@ -7124,11 +7140,11 @@
             "rows": [
                 {
                     "route": "MBCI_종합지수",
-                    "current_index": 1325.0,
-                    "previous_index": 1434.0,
+                    "current_index": 1282.0,
+                    "previous_index": 1325.0,
                     "weekly_change": {
-                        "value": "-109",
-                        "percentage": "-7.60%",
+                        "value": "-43",
+                        "percentage": "-3.25%",
                         "color_class": "text-blue-500"
                     }
                 }
